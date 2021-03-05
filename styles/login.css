@@ -1,0 +1,69 @@
+.outer-bg-cover {
+    background-color: #e39774;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat; 
+}
+
+.inner-bg-cover {
+    background-color: #ffffff;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.36);
+}
+
+.center-me {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.center-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.signin-form {
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 40px;
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.36);
+}
+
+.white-text{
+    color: #000000;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+.submit-btn {
+    background-color: #326273;
+    color: #ffffff;
+    transition: 0.25s all;
+}
+
+.submit-btn:hover {
+    background-color: #5c9ead;
+    color: #eeeeee;
+}
+
+.m-hyperlink{
+    color: #326273;
+    text-decoration: none;
+    transition: 0.25s all;
+}
+
+.m-hyperlink:hover{
+    color: #5c9ead;
+    text-decoration: underline;
+}
