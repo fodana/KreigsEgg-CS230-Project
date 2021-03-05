@@ -1,44 +1,25 @@
-
 .main{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     background:#eeeeee;
 }
-
-.home{
-  
-    padding: 8px;
-    box-shadow: 0px 4px 8px 0 #b3b3b3f5;
-    padding: 0 16px 0 16px;
-    background:#326273;
-    padding: 8px;
-    text-align: center;
-}
-.center-column{
-    float: center;
-    margin-right: 16px;
-    margin: 10px;
-    width:80%
-    
-
-}
-
-.card{
+.title{
+     
     box-shadow: 0px 4px 8px 0 #b3b3b3f5;
     padding: 0 16px 0 16px;
     background:#e39774;
     padding: 8px;
     text-align: center;
 }
-
-.Left-Column{
-float:left;
-margin-right: 16px;
-margin: 10px;
+.dev{
+    box-shadow: 0px 4px 8px 0 #b3b3b3f5;
+    padding: 0 16px 0 16px;
+    background:#e39774;
+    padding: 8px;
+    text-align: center;
 
 }
-
-.nav-list-link{
-float:center;
-
+.buffer{
+    padding: 8px;
+    background:#eeeeee
 }
