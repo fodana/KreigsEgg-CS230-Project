@@ -1,0 +1,40 @@
+
+
+.white-txt{
+    color: #FFFFFF;
+}
+
+.dwhite-txt{
+    color: #EEEEEE;
+}
+
+.nav-link{
+    color: #FFFFFF;
+}
+
+.nav-piece {
+    color: #fff;
+    text-transform: none;
+    text-decoration: none;
+    
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  .nav-piece:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nav-piece:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
