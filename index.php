@@ -3,7 +3,6 @@ require 'includes/header.php';
 ?>
 
 <main>
-
     <link rel="stylesheet" href="styles/index.css">
 
     <div class="home">
@@ -29,6 +28,9 @@ require 'includes/header.php';
                 </div>
                 <div>
                     <a href="about.php">About Page</a>
+                </div>
+                <div>
+                    <a href="support.php">Support Page</a>
                 </div>
 
     </div>

@@ -43,8 +43,11 @@ session_start();
                         <li class="nav-item">
                             <a class="nav-link nav-piece" style="color: #EEEEEE" href="post.php">Sell</a>
                         </li>
-                        <li class="nav-item">
+                       <li class="nav-item">
                             <a class="nav-link nav-piece" style="color: #EEEEEE" href="about.php">About</a>
+                        </li>   
+                        <li class="nav-item">
+                            <a class="nav-link nav-piece" style="color: #EEEEEE" href="support.php">Support</a>
                         </li>
                         <?php if(isset($_SESSION['uid'])){
                             echo'
@@ -71,3 +74,4 @@ session_start();
             integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
         </script>
     </body>
+    
