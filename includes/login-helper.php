@@ -38,7 +38,7 @@ if (isset($_POST['login-submit'])) {
                 $_SESSION['fname'] = $data['fname'];
                 $_SESSION['uname'] = $data['uname'];
 
-                header("Location: ../index.php?success=login");
+                header("Location: ../listings.php?success=login");
                 exit();
             }
             else{

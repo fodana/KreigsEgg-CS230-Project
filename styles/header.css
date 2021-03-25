@@ -1,19 +1,6 @@
 
-
-.white-txt{
-    color: #FFFFFF;
-}
-
-.dwhite-txt{
-    color: #EEEEEE;
-}
-
-.nav-link{
-    color: #FFFFFF;
-}
-
 .nav-piece {
-    color: #fff;
+    color: #FFFFFF;
     text-transform: none;
     text-decoration: none;
     
@@ -30,7 +17,7 @@
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: #FFFFFF;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
