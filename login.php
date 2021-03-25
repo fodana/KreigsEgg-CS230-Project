@@ -9,8 +9,8 @@ require "includes/header.php";
             <div class="center-me">
                 <img class="d-block mx-auto" src="images/logo.png" alt="Logo">
             </div>
-            <div class="h-40 center-me">
-                <div class="my-auto">
+            <div class="center-me">
+                <div>
                     <div class="signin-form">
                         <form action="includes/login-helper.php" method="post">
                             <div class="white-text">
