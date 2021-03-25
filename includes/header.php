@@ -41,8 +41,11 @@ session_start();
                         <li class="nav-item">
                             <a class="nav-link nav-piece" style="color: #EEEEEE" href="listings.php">Listings</a>
                         </li>
-                        <li class="nav-item">
+                       <li class="nav-item">
                             <a class="nav-link nav-piece" style="color: #EEEEEE" href="about.php">About</a>
+                        </li>   
+                        <li class="nav-item">
+                            <a class="nav-link nav-piece" style="color: #EEEEEE" href="support.php">Support</a>
                         </li>
                         <?php if(isset($_SESSION['uid'])){
                             echo'

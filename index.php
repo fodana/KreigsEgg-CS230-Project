@@ -30,6 +30,9 @@ require 'includes/header.php';
                 <div>
                     <a href="about.php">About Page</a>
                 </div>
+                <div>
+                    <a href="support.php">Support Page</a>
+                </div>
 
     </div>
 
