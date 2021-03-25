@@ -19,7 +19,7 @@ session_start();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="styles/header.css">
 
 </head>
 <header>
@@ -27,7 +27,9 @@ session_start();
     <body>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #326273;">
             <div class="container-fluid">
-                <a class="navbar-brand nav-piece" style="color: #FFFFFF" href="../index.php">KreigsEgg</a>
+                <a class="navbar-brand nav-piece" style="color: #FFFFFF" href="../index.php">
+                <img class="logo-sze" src="images/logoSym.png" alt="Logo">
+                KreigsEgg</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -36,10 +38,10 @@ session_start();
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link nav-piece" style="color: #FFFFFF" aria-current="page" href="index.php">Home</a>
+                            <a class="nav-link nav-piece" style="color: #EEEEEE" href="listings.php">Listings</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-piece" style="color: #EEEEEE" href="listings.php">Listings</a>
+                            <a class="nav-link nav-piece" style="color: #EEEEEE" href="post.php">Sell</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-piece" style="color: #EEEEEE" href="about.php">About</a>

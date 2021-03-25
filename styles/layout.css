@@ -1,6 +1,6 @@
 .outer-bg-cover {
     background-color: #e39774;
-    height: 100vh;
+    height: auto;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
