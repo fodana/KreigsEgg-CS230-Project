@@ -55,3 +55,18 @@
     transform: rotate(90deg);
     color: #454444;
 }
+
+.main{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background:#eeeeee;
+}
+.contact{  
+    box-shadow: 0px 4px 8px 0 #b3b3b3f5;
+    padding: 0 16px 0 16px;
+    padding: 8px;
+    text-align: center;
+}
+.buffer{
+    padding: 33px;
+}
