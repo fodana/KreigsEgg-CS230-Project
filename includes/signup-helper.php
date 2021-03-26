@@ -43,10 +43,11 @@ if (isset($_POST['signup-submit'])) {
                 else{
                     $hashed = password_hash($password, PASSWORD_BCRYPT);
                     mysqli_stmt_bind_param($stmt, "ssssss", $firstName, $lastName, $email, $username, $phoneNumber, $hashed);
+                    echo 
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
 
-                    $sqlImg = "INSERT INTO profiles (uname, fname, phnum) VALUES ('$username', '$firstName', '$phoneNumber')";
+                    $sqlImg = "INSERT INTO profiles (pid, uname, fname, lname, email, phnum, profpic) VALUES (0,'$username', '$firstName', '$lastName', '$email','$phoneNumber','../images/default.png')";
                     mysqli_query($conn, $sqlImg);
 
                     header("Location: ../login.php?signup=success");

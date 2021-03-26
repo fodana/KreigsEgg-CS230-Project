@@ -1,0 +1,53 @@
+.main{
+    background:#eeeeee;
+    text-align: center;
+
+
+}
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#prof-display{
+    display:block;
+    width: 150px;
+    margin: 10px auto;
+    border-radius: 100%;
+    
+    border: 3px solid  #326273;
+
+}
+.card1{
+    text-align:center;
+    color: #326273;
+
+}
+.profTitle{
+    font-size: 20px;
+}
+
+.card2{
+    text-align:center;
+    font-size: large;
+
+}
+.ltext{
+    padding-right: 10px;
+}
+.tbelow{
+    font-size: 15px;
+}
+.hide{
+    display:none;
+    text-align: center;
+}
+.hide2{
+    display:none;
+}
+.hide3{
+    display:none;
+}
+.show{
+    display:block;
+    text-align: center;
+}
