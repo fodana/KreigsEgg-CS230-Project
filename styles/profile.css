@@ -1,8 +1,58 @@
-.main{
-    background:#eeeeee;
+.outer-cover{
+    background-color: #e39774;
+    height:auto;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+}
+.inner{
+    background-color: #ffffff;
+    height: auto;
+    width: 45%;
     text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat; 
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.36);
+    justify-content: center;
+    position:relative;
+    
+}
+.buffer{
+    height: 5%;
+    background-size: cover;
+    background-color: #ffffff;
+    color:#ffffff;
+}
+.display-info{
+    display:grid;
+    
+    justify-content: center;
+    
+    
+}
+.footer{
+    height:100%;
+    background-position: center;
+    background-size: cover;
+    position:fixed;
+    left:0;
+    right:0;
+    width: 100%;
+    color: black;
+    background-color: #e39774;
 
-
+}
+.uppercard{
+    background-color: #326273;
+    color:#ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+    
 }
 .title{
     font-family: 'Times New Roman', Times, serif;
@@ -17,19 +67,68 @@
     border: 3px solid  #326273;
 
 }
-.card1{
-    text-align:center;
-    color: #326273;
+.photo-class{
+    
+    float:center;
+}
+.display{
+    float:center;
+    padding-left: 30px;
+}
 
+.card1{
+    
+    color: #326273;
+    float:left;
+    text-align:center;
+    display:grid;
+    justify-content: center;
+    
+
+}
+.display{
+    text-align: left;
+    padding-top: 10px;
 }
 .profTitle{
     font-size: 20px;
+    text-align:center;
+    
+}
+.uname{
+    display:inline-block;
+    border-top: 2px solid #326273;
+    position:relative;
+    top:30px;
+    
 }
 
-.card2{
-    text-align:center;
-    font-size: large;
-
+.email{
+    display:inline-block;
+    border-top: 2px solid #326273;
+    position:relative;
+    top:30px;
+}
+.fname{
+    display:inline-block;
+    border-top: 2px solid #326273;
+    
+    position:relative;
+    top:30px;
+}
+.lname{
+    display:inline-block;
+    border-top: 2px solid #326273;
+    position:relative;
+    top:30px;
+    
+}
+.phnum{
+    display:inline-block;
+    border-top: 2px solid #326273 ;
+    position:relative;
+    top:30px;
+    
 }
 .ltext{
     padding-right: 10px;
@@ -37,17 +136,96 @@
 .tbelow{
     font-size: 15px;
 }
+.show-btn{
+    background-color: #eeeeee; 
+    border: 1px solid #326273;
+    color: #326273;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+   
+}
+
+.show-btn:hover{
+    background-color: #326273;
+    color: white;
+}
 .hide{
     display:none;
     text-align: center;
 }
+.hide:hover{
+    background-color: #5c9ead;
+    color: #eeeeee;
+}
 .hide2{
     display:none;
+}
+.hide2:hover{
+    background-color: #5c9ead;
+    color: #eeeeee;
 }
 .hide3{
     display:none;
 }
+.hide3:hover{
+    background-color: #5c9ead;
+    color: #eeeeee;
+}
+.hide4{
+    display:none;
+    padding-bottom: 10px;
+}
+.hide4:hover{
+    background-color: #5c9ead;
+    color: #eeeeee;
+}
 .show{
-    display:block;
+    background-color: #eeeeee; 
+    border: 1px solid #326273;
+    color: black;
+    padding: 12px 20px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    
+    
+}
+
+.submit:hover{
+    background-color: #5c9ead;
+    color: black;
+}
+.sbm{
+    display:none;
+}
+.sbmshow{
+    background-color: #eeeeee; 
+    border: 1px solid #326273;
+    color: #326273;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.sbm2{
+    display:none;
+}
+.sbm3{
+    display:none;
+}
+.sbm4{
+    display:none;
 }

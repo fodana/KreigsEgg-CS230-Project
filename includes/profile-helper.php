@@ -7,7 +7,7 @@ define('KB', 1024);
 define('MB', 1048576);
 
 
-if(isset($_POST['submite'])){
+if(isset($_POST['submit'])){
     $uname = $_SESSION['uname'];
     $newemail = $_POST['email-update'];
     
