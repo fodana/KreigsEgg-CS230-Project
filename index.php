@@ -1,4 +1,11 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+<?php
+    require 'includes/header.php';
+?>
+
+
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
@@ -7,6 +14,8 @@
     <link rel="stylesheet" href="styles/index.css">
 
 </head>
+
+
 
 <body>
     <main class="outer-bg-cover">
@@ -43,7 +52,16 @@
                     </div>
                 </div>
                 
-                <h2>Welcome to KreigsEgg</h2>
+
+                <div class="intro">
+                <h2>What is KreigsEgg?</h2>
+                <hr>
+                <p class="mx-auto">KreigsEgg is a platform that seeks to disrupt the PC parts world by connecting buyers and sellers of used and refurbished PC parts. As prices
+                grow the need for a stronger secondhand market has arisen and we at KreigsEgg strive to fufill that need. Want to build a PC but priced out because of cryptocurrency
+                miners? Search our wide selection of preowned GPUs. Looking for something niche or specific? Keep an eye out for our requests page coming soon, where you can see if anyone
+                has the part you are looking for!
+                 </p>
+                </div>
 
 
 
