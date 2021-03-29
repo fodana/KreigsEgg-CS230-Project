@@ -27,7 +27,7 @@
 
 
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"
-                        data-interval="1000">
+                        data-interval="4000">
                         <div class="carousel-inner">
                             <a href="post.php">
                                 <div class="carousel-item active">

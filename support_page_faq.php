@@ -65,8 +65,8 @@ require 'includes/header.php';
             <div class="contact">
             <div class="buffer">
             </div>
-                <h1 style="font-size: 25px;color;black;"> Question not answered? </h1>
-                <h1 style="font-size: 25px;color;black;"> Contact Us </h1>
+                <h1 style="font-size: 25px;color: black;"> Question not answered? </h1>
+                <h1 style="font-size: 25px;color: black;"> Contact Us </h1>
                 <p>Benjamin M. Statler College of Engineering and Mineral Resources
                     <br>1374 Evansdale Drive
                     <br>Morgantown, West Virginia 26506
