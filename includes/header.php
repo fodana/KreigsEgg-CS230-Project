@@ -27,7 +27,7 @@ session_start();
     <body>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #326273;">
             <div class="container-fluid">
-                <a class="navbar-brand nav-piece" style="color: #FFFFFF" href="../index.php">
+                <a class="navbar-brand nav-piece" style="color: #FFFFFF" href="index.php">
                 <img class="logo-sze" src="images/logoSym.png" alt="Logo">
                 KreigsEgg</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
