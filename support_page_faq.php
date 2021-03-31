@@ -15,7 +15,7 @@ require 'includes/header.php';
                         <div class="card-header">
                             <h4 class="card-header">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                    href="#collapseOne">Buyer Question 1</a>
+                                    href="#collapseOne">How to purchase products</a>
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
@@ -26,7 +26,7 @@ require 'includes/header.php';
                         <div class="card-header">
                             <h4 class="card-header">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                    href="#collapseTwo">Buyer Question 2</a>
+                                    href="#collapseTwo">How to contact sellers </a>
                             </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse in">
@@ -39,7 +39,7 @@ require 'includes/header.php';
                             <div class="card-header">
                                 <h4 class="card-header">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                        href="#collapseThree">Seller Question 1</a>
+                                        href="#collapseThree">How to list products</a>
                                 </h4>
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse in">
