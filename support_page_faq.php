@@ -9,7 +9,7 @@ require 'includes/header.php';
             <div class="row">
                 <!-- Page Contents Goes in here. This row can be split to organize content -->
                 <div class="" id="accordion">
-                    <div class="titleHeader">Support Page</div>
+                    <div class="titleHeader center-me">Support Page</div>
                     <div class="card ">
                         <div class="titleCard">FAQ Buyer</div>
                         <div class="card-header">
@@ -62,10 +62,36 @@ require 'includes/header.php';
                     </div>
                 </div>
             </div>
-            <div class="contact">
-            <div class="buffer">
+            <div class="question-form center-me">
+                <form action="includes/support_page_faq-helper.php" method="post">
+                    <div class="white-text">
+                        <h1 style="font-size: 25px; color: black;">Question not answered?</h1>
+                        <h1 style="font-size: 25px; color: black;">Please leave us a question, and we'll get back to
+                            you!</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" name="fname" placeholder="First Name" required
+                                autofocus>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" name="lname" placeholder="Last Name" required
+                                autofocus>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="email" class="form-control" name="email" placeholder="Email Address" required
+                            autofocus>
+                        <input type="text" class="form-control" name="question" placeholder="Enter your question here"
+                            required autofocus>
+                        <button class="btn-out btn-lg submit-btn btn-black" name="question-submit" type="submit">Submit
+                            Question</button>
+                    </div>
+                </form>
             </div>
-                <h1 style="font-size: 25px;color: black;"> Question not answered? </h1>
+            <div class="contact">
+                <div class="buffer">
+                </div>
                 <h1 style="font-size: 25px;color: black;"> Contact Us </h1>
                 <p>Benjamin M. Statler College of Engineering and Mineral Resources
                     <br>1374 Evansdale Drive
