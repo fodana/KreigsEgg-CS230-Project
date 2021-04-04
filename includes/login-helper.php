@@ -37,6 +37,7 @@ if (isset($_POST['login-submit'])) {
                 $_SESSION['uid'] = $data['uid'];
                 $_SESSION['fname'] = $data['fname'];
                 $_SESSION['uname'] = $data['uname'];
+                $_SESSION['pop'] = "Default";
 
                 header("Location: ../listings.php?success=login");
                 exit();

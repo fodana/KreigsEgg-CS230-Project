@@ -30,3 +30,14 @@
     width: 100%; 
     left: 0; 
   }
+
+  .sea-btn {
+    background-color: #e39774;
+    color: #ffffff;
+    transition: 0.25s all;
+}
+
+.sea-btn:hover {
+    background-color: #f3a987;
+    color: #eeeeee;
+}

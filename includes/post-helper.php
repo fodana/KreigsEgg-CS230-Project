@@ -14,6 +14,19 @@ if (isset($_POST['post-submit'])) {
     $desc = $_POST['desc'];
     $date = date('Y-m-d H:i:s');
 
+    $tags = array("new", "used", "rig", "gpu", "cpu", "motherboard", "cooler", "psu", "accessory");
+    $includedTags = "tags:{";
+
+    for($i=0; $i<sizeof($tags); $i++){
+        if(isset($_POST[$tags[$i]])){
+            $includedTags = $includedTags." ".$tags[$i].";";
+        }
+    }
+
+    $includedTags = $includedTags." }";
+
+    echo $includedTags;
+
     $file = $_FILES['post-photo'];
 
     $file_name = $file['name'];
@@ -28,13 +41,13 @@ if (isset($_POST['post-submit'])) {
         if(in_array($ext, $allowed)){
             if($file_size < 8*MB){
                 $new_name = uniqid('',true).".".$ext;
-                $destination = 'profiles/'.$new_name;
-                move_uploaded_file($file_temp, $destination);
+                $destination = 'listing-img/'.$new_name;
+                move_uploaded_file($file_temp, '../'.$destination);
 
-                $sql = "INSERT INTO listings (uname, Title, Description, Date, Price, imagePath) VALUES (?, ?, ?, ?, ?, ?);";
+                $sql = "INSERT INTO listings (uname, Title, Description, Date, Price, imagePath, tags) VALUES (?, ?, ?, ?, ?, ?, ?);";
                 $stmt = mysqli_stmt_init($conn);
                 if(mysqli_stmt_prepare($stmt, $sql)){
-                    mysqli_stmt_bind_param($stmt, "ssssss", $username, $title, $desc, $date, $price, $destination);
+                    mysqli_stmt_bind_param($stmt, "sssssss", $username, $title, $desc, $date, $price, $destination, $includedTags);
                     mysqli_stmt_execute($stmt);
                     header('Location: ../listings.php?success');
                 }else{
@@ -54,4 +67,7 @@ if (isset($_POST['post-submit'])) {
         header("Location: ../post.php?error=UploadError");
         exit();
     }
+}else{
+    header("Location: ../post.php#");
+    exit();
 }
