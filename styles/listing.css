@@ -47,3 +47,8 @@
     color: #5c9ead;
     text-decoration: underline;
 }
+
+h5 + button, .card-title{
+    display: inline;
+
+}
