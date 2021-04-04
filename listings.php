@@ -1,4 +1,7 @@
+
+
 <?php
+//OLD LISTINGS
     require 'includes/header.php';
 ?>
 
@@ -32,7 +35,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="rig" id="towerBox">
                             <label class="form-check-label" for="towerBox">
-                                Full PC's
+                                Full PCs
                             </label>
                         </div>
                     </div>
@@ -42,7 +45,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="gpu" id="gpuBox">
                             <label class="form-check-label" for="gpuBox">
-                                Graphics Card's
+                                Graphics Cards
                             </label>
                         </div>
                     </div>
@@ -52,7 +55,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="cpu" id="cpuBox">
                             <label class="form-check-label" for="cpuBox">
-                                CPU's
+                                CPUs
                             </label>
                         </div>
                     </div>
@@ -62,7 +65,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="motherboard" id="moboBox">
                             <label class="form-check-label" for="moboBox">
-                                Motherboard's
+                                Motherboards
                             </label>
                         </div>
                     </div>
@@ -72,7 +75,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="cooler" id="coolerBox">
                             <label class="form-check-label" for="coolerBox">
-                                CPU Cooler's
+                                CPU Coolers
                             </label>
                         </div>
                     </div>
@@ -82,7 +85,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="psu" id="psuBox">
                             <label class="form-check-label" for="psuBox">
-                                Power Supply's
+                                Power Supplys
                             </label>
                         </div>
                     </div>
@@ -106,61 +109,11 @@
         </div>
         <div class="container">
             <div class="inner-bg-cover">
-                <div class="center-me">
-                    <img class="d-block mx-auto" src="images/logo.png" alt="Logo">
-                </div>
                 <div class="container">
-                    <div class="row center-me">
-                        <div class="card my-cards" style="width: 22rem;">
-                            <img class="card-img-top" src="images/pan.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Frying Pan</h5>
-                                <p class="card-text">Haha look at this cool frying pan</p>
-                                <a href="#" class="btn btn-lg def-btn btn-lg">Request Seller Info</a>
-                            </div>
-                        </div>
-                        <div class="card my-cards" style="width: 22rem;">
-                            <img class="card-img-top" src="images/pan.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Frying Pan</h5>
-                                <p class="card-text">Haha look at this cool frying pan</p>
-                                <a href="#" class="btn btn-lg def-btn btn-lg">Request Seller Info</a>
-                            </div>
-                        </div>
-                        <div class="card my-cards" style="width: 22rem;">
-                            <img class="card-img-top" src="images/pan.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Frying Pan</h5>
-                                <p class="card-text">Haha look at this cool frying pan</p>
-                                <a href="#" class="btn btn-lg def-btn btn-lg">Request Seller Info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row center-me">
-                        <div class="card my-cards" style="width: 22rem;">
-                            <img class="card-img-top" src="images/pan.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Frying Pan</h5>
-                                <p class="card-text">Haha look at this cool frying pan</p>
-                                <a href="#" class="btn btn-lg def-btn btn-lg">Request Seller Info</a>
-                            </div>
-                        </div>
-                        <div class="card my-cards" style="width: 22rem;">
-                            <img class="card-img-top" src="images/pan.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Frying Pan</h5>
-                                <p class="card-text">Haha look at this cool frying pan</p>
-                                <a href="#" class="btn btn-lg def-btn btn-lg">Request Seller Info</a>
-                            </div>
-                        </div>
-                        <div class="card my-cards" style="width: 22rem;">
-                            <img class="card-img-top" src="images/pan.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Frying Pan</h5>
-                                <p class="card-text">Haha look at this cool frying pan</p>
-                                <a href="#" class="btn btn-lg def-btn btn-lg">Request Seller Info</a>
-                            </div>
-                        </div>
+                    <?php
+                    $_SESSION['pop'] = "Default";
+                    require "includes/display-pop.php"
+                    ?>
                     </div>
                 </div>
             </div>
