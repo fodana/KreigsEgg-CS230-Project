@@ -53,7 +53,7 @@ session_start();
                         <?php if(isset($_SESSION['uid'])){
                             echo'
                             <li class="nav-item">
-                                <a class="nav-link nav-piece" style="color: #EEEEEE" href="../profile.php">Profile</a>
+                                <a class="nav-link nav-piece" style="color: #EEEEEE" href="profile.php">Profile</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link nav-piece" style="color: #EEEEEE" href="includes/logout.php">Logout</a>
@@ -62,7 +62,7 @@ session_start();
                         }else{
                             echo'
                             <li class="nav-item">
-                                <a class="nav-link nav-piece" style="color: #EEEEEE" href="../login.php">Login</a>
+                                <a class="nav-link nav-piece" style="color: #EEEEEE" href="login.php">Login</a>
                             </li>
                             ';
                         }

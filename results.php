@@ -1,14 +1,11 @@
-
-
 <?php
-//OLD LISTINGS
     require 'includes/header.php';
 ?>
 
 <main class="outer-bg-cover">
         <link rel="stylesheet" href="styles/listing.css">
         <div class="tag-form-pos tag-form">
-            <h5 class="tag-text">Search by Tag</h5>
+            <h5 class="tag-text">Search By Tag</h5>
             <form action="includes/tag-helper.php" method="post">
                 <div class="form-group row">
                     <div class="col-sm-8">
@@ -101,8 +98,8 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <div class="col-sm-8">
-                        <button class="btn btn-lg def-btn btn-lg" style="padding: 2.1%;" name="tagSearch-submit" type="submit">Submit Listing</button>
+                    <div class="col-sm-8" style="margin-left: 20%; margin-top: 5%; margin-bottom: 0%;">
+                        <button class="btn btn-lg def-btn btn-lg" style="padding: 5%;" name="tagSearch-submit" type="submit">Search</button>
                     </div>
                 </div>
             </form>
@@ -111,7 +108,6 @@
             <div class="inner-bg-cover">
                 <div class="container">
                     <?php
-                    $_SESSION['pop'] = "Default";
                     require "includes/display-pop.php"
                     ?>
                     </div>
