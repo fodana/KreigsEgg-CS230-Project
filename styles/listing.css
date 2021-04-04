@@ -9,12 +9,38 @@
 
 .inner-bg-cover {
     background-color: #ffffff;
+    min-height: 100vh;
     height: auto;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.36);
+}
+
+.tag-form-pos{
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+.tag-form{
+    width: 13%;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 5%;
+    background-color: #EEEEEE;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 0px;
+    padding-bottom:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.36);
+}
+
+.tag-text{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #326273;
 }
 
 .center-me {
@@ -48,7 +74,24 @@
     text-decoration: underline;
 }
 
-h5 + button, .card-title{
-    display: inline;
+
+.results{
+    padding-top: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+.custom-card{
+    background-color: #EEEEEE;
+    padding-top: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 10px;
+}
+
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 }

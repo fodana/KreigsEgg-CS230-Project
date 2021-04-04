@@ -19,7 +19,7 @@ session_start();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="../styles/header.css">
 
 </head>
 <header>
@@ -69,6 +69,16 @@ session_start();
                         ?>
                     </ul>
                 </div>
+                <form action="../includes/search-helper.php" class="form-inline my-2 my-lg-0" method="post">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search">
+                        </li>
+                        <li class="nav-item" style="padding-left: 2%">
+                            <button class="btn sea-btn my-2 my-sm-0" name="search-submit" type="submit">Search</button>
+                        </li>
+                    </ul>
+                </form>
             </div>
         </nav>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
