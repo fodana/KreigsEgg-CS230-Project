@@ -44,7 +44,6 @@ float:center;
 
 .outer-bg-cover {
     background-color: #e39774;
-    height: 100vh;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
@@ -53,7 +52,6 @@ float:center;
 
 .inner-bg-cover {
     background-color: #ffffff;
-    height: 100vh;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;

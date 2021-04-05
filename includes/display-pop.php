@@ -13,31 +13,71 @@ if($_SESSION['pop'] == NULL){
     $counter = 3;
     $query = mysqli_query($conn, $sql);
 
+
+    //fetching from users admin info
+    $uname = $_SESSION['uname'];
+    $sql2 = "SELECT * FROM users WHERE uname='$uname'";
+    $adminQuery = mysqli_query($conn, $sql2);
+    $adminRow = mysqli_fetch_assoc($adminQuery);
+    $admin = $adminRow['admin'];
+
     echo'<h5 class="results center-me">Search Results</h5>';
-    while($row = mysqli_fetch_assoc($query)){
-        if($counter == 3){
-            echo '
-            <div class="row center-me">
+
+    if($admin){
+        while($row = mysqli_fetch_assoc($query)){
+            if($counter == 3){
+                echo '
+                <div class="row center-me">
+                ';
+                $counter = 0;
+            }
+            echo'
+            <div class="card custom-card" style="width: 22rem;">
+                <img class="card-img-top format-img-size" src="'.$row['imagePath'].'" alt="'.$row['Title'].' picture">
+                <div class="card-body admin-Card">
+                    <h5 class="card-title">'.$row['Title'].'</h5>
+                    <button type="submit" method="post">button</button>
+                    <h5 class="card-title">$'.$row['Price'].'</h5>
+                    <p class="card-text">'.$row['Description'].'</p>
+                    <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
+                </div>
+            </div>
             ';
-            $counter = 0;
+            if($counter == 3){
+                echo '
+                </div>
+                ';
+            }else
+                $counter++;
         }
-        echo'
-        <div class="card custom-card" style="width: 22rem;">
-            <img class="card-img-top format-img-size" src="'.$row['imagePath'].'" alt="'.$row['Title'].' picture">
-            <div class="card-body">
-                <h5 class="card-title">'.$row['Title'].'</h5>
-                <h5 class="card-title">$'.$row['Price'].'</h5>
-                <p class="card-text">'.$row['Description'].'</p>
-                <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
-            </div>
-        </div>
-        ';
-        if($counter == 3){
-            echo '
+
+
+    }else{
+        while($row = mysqli_fetch_assoc($query)){
+            if($counter == 3){
+                echo '
+                <div class="row center-me">
+                ';
+                $counter = 0;
+            }
+            echo'
+            <div class="card custom-card" style="width: 22rem;">
+                <img class="card-img-top format-img-size" src="'.$row['imagePath'].'" alt="'.$row['Title'].' picture">
+                <div class="card-body">
+                    <h5 class="card-title">'.$row['Title'].'</h5>
+                    <h5 class="card-title">$'.$row['Price'].'</h5>
+                    <p class="card-text">'.$row['Description'].'</p>
+                    <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
+                </div>
             </div>
             ';
-        }else
-            $counter++;
+            if($counter == 3){
+                echo '
+                </div>
+                ';
+            }else
+                $counter++;
+        }
     }
     if($counter != 3)
         echo'
