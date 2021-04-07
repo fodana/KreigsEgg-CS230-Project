@@ -23,7 +23,7 @@ if($_SESSION['pop'] == NULL){
 
     echo'<h5 class="results center-me">Search Results</h5>';
 
-    if($admin){
+    if($admin){ //Check for admin, changes the cards to display 
         while($row = mysqli_fetch_assoc($query)){
             if($counter == 3){
                 echo '
@@ -32,16 +32,22 @@ if($_SESSION['pop'] == NULL){
                 $counter = 0;
             }
             echo'
-            <div class="card custom-card" style="width: 22rem;">
-                <img class="card-img-top format-img-size" src="'.$row['imagePath'].'" alt="'.$row['Title'].' picture">
-                <div class="card-body admin-Card">
-                    <h5 class="card-title">'.$row['Title'].'</h5>
-                    <button type="submit" method="post">button</button>
-                    <h5 class="card-title">$'.$row['Price'].'</h5>
-                    <p class="card-text">'.$row['Description'].'</p>
-                    <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
+            <form action="includes/display-pop.php" method="post">
+                <div class="card custom-card" style="width: 22rem;">
+                    <img class="card-img-top format-img-size" src="'.$row['imagePath'].'" alt="'.$row['Title'].' picture">
+                    <div class="card-body admin-Card">
+                        <input class="show-btn" type="button" name="show-btn" value="Edit" onClick="txtBox(input,sbm)"/>
+                        <h5 class="card-title">'.$row['Title'].'</h5>
+                        <input class="hide" type="text" name="title-update" id="title-update" value="'.$row['Title'].'" />
+                        <h5 class="card-title">$'.$row['Price'].'</h5>
+                        <input class="hide" type="text" name="price-update" id="title-update" value="'.$row['Price'].'" />
+                        <p class="card-text">'.$row['Description'].'</p>
+                        <input class="hide" type="text" name="title-update" id="title-update" value="'.$row['Description'].'" />
+                        <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
+                        <input class = "sbm" type="submit" name="submit" id="submit">
+                    </div>
                 </div>
-            </div>
+            </form>
             ';
             if($counter == 3){
                 echo '
@@ -123,4 +129,17 @@ if($_SESSION['pop'] == NULL){
         echo'
         </div>
         ';
+}
+
+if(isset($_POST['submit'])){
+    $uname = $_SESSION['uname'];
+    $newTitle = $_POST['title-update'];
+    $newPrice = $_POST['price-update'];
+    $newDescription = $_POST['description-update'];
+
+    $sqlForUID = "SELECT * FROM listings WHERE (uname='$uname')";
+
+
+
+    $sql = "UPDATE listings SET Title='$newTitle' Price='$newPrice' Description='$newDescription' WHERE lid='$lid'";
 }
