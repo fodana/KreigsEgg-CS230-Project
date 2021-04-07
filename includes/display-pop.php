@@ -1,5 +1,14 @@
+<script>
+    function txtBox(input,sbm) {
+        document.getElementById(input).className = "show";
+        document.getElementById(sbm).className = "sbmshow";
+    }
+</script>
+
 <?php
 session_start();
+
+
 
 
 if($_SESSION['pop'] == NULL){

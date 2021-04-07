@@ -5,6 +5,13 @@
     require 'includes/header.php';
 ?>
 
+<script>
+    function txtBox(input,sbm) {
+        document.getElementById(input).className = "show";
+        document.getElementById(sbm).className = "sbmshow";
+    }
+</script>
+
 <main class="outer-bg-cover">
         <link rel="stylesheet" href="styles/listing.css">
         <div class="tag-form-pos tag-form">
