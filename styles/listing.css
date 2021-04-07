@@ -105,3 +105,8 @@
     margin-right: auto;
     border-radius: 5px
 }
+
+a:visited, a:link, a:active{
+    text-decoration: none;
+    color: black;
+}
