@@ -43,6 +43,17 @@
     text-decoration-color: #326273;
 }
 
+.fa { 
+    float: right;
+    padding:10px 15px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .fa:hover {
+    color: red;
+  }  
+
 .center-me {
     display: flex;
     justify-content: center;

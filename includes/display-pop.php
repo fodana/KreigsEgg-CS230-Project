@@ -30,6 +30,10 @@ if($_SESSION['pop'] == NULL){
                     <h5 class="card-title">$'.$row['Price'].'</h5>
                     <p class="card-text">'.$row['Description'].'</p>
                     <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <i onclick="this.style.color = \'#FF0000\'" id="heart" href="Favorited" class="fa fa-heart" style="font-size:30px"></i>
+
                 </div>
             </a>
         </div>
