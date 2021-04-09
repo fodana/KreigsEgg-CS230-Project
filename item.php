@@ -50,7 +50,7 @@ if(isset($_SESSION['uid'])){
             <form action = "includes/item-helper.php" method="POST">
             <input class="show-btn" type="button" name="show-btn" value="Edit" onclick="txtBox(input1,sbm);txtBox(input2, sbm); txtBox(input3, sbm)" />
                 <h3><?php echo $title; ?></h3>
-                <input class="stayHidden" name="listingID" id="listingID"/>
+                <input class="stayHidden" name="listingID" id="listingID" value=<?php echo $lid?>>
                 <input class="hide" type="text" name="title-update" id="title-update" value=<?php echo $title ?>>
                 <p><?php echo $price; ?></p>
                 <input class="hide" type="text" name="price-update" id="price-update" value=<?php echo $price ?>>

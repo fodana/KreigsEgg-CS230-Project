@@ -23,7 +23,7 @@ if($_SESSION['pop'] == NULL){
         }
         echo'
         <div class="card custom-card" style="width: 22rem;">
-            <a href=item.php?lid='.$row['lid'].'">
+            <a href=item.php?lid='.$row['lid'].'>
                 <img class="card-img-top format-img-size" src="'.$row['imagePath'].'" alt="'.$row['Title'].' picture">
                 <div class="card-body">
                     <h5 class="card-title">'.$row['Title'].'</h5>
