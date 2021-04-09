@@ -26,21 +26,37 @@ if(isset($_SESSION['uid'])){
 ?>
 
 <main class="outer-bg-cover">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/item.css">
     <script>
     function txtBox(input,sbm) {
-        document.getElementById(input).className = "show";
-        document.getElementById(sbm).className = "sbmshow";
+        if(document.getElementById(input).className == "hide"){
+            document.getElementById(input).className = "show";
+            document.getElementById(sbm).className = "sbmshow";
+        }else{
+            document.getElementById(input).className = "hide";
+            document.getElementById(sbm).className = "sbm"; 
+        }
     }
     </script>
     <div class="container">
         <div class="inner-bg-cover">
             <img src=<?php echo $img; ?>/>
+            <script>
+                var input1 = "title-update";
+                var input2 = "price-update";
+                var input3 = "desc-update";
+                var sbm = "submit-updates"
+                </script>
             <form action = "includes/item-helper.php" method="POST">
+            <input class="show-btn" type="button" name="show-btn" value="Edit" onclick="txtBox(input1,sbm);txtBox(input2, sbm); txtBox(input3, sbm)" />
                 <h3><?php echo $title; ?></h3>
-                <input class="show-btn" type="button" name="show-btn" value="Edit" onclick="txtBox(input,sbm)" />
+                <input class="stayHidden" name="listingID" id="listingID"/>
+                <input class="hide" type="text" name="title-update" id="title-update" value=<?php echo $title ?>>
                 <p><?php echo $price; ?></p>
+                <input class="hide" type="text" name="price-update" id="price-update" value=<?php echo $price ?>>
                 <p><?php echo $desc; ?></p>
+                <input class="hide" type="text" name="desc-update" id="desc-update" value=<?php echo $desc ?>>
+                <input class = "sbm" type="submit" name="submit-updates" id="submit-updates"/>
             </form>
             
 
