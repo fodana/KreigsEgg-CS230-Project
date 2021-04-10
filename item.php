@@ -2,26 +2,34 @@
 require 'includes/header.php';
 require 'includes/dbhandler.php';
 
+session_start();
+
 $lid = $_GET['lid'];
 $sql = "SELECT * FROM listings WHERE lid='$lid'";
 $query = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($query);
 
-echo $lid;
+
 
 $title = $row['Title'];
 $img = $row['imagePath'];
 $desc = $row['Description'];
 $price = $row['Price'];
+$author = $row['uname'];
 
-if(isset($_SESSION['uid'])){
-    $uid = $_SESSION['uid'];
-    $sqlpro = "SELECT * FROM profiles WHERE uname='$uid';";
+$admin = 0;
+
+
+if(isset($_SESSION['uname'])){
+    $uname = $_SESSION['uname'];
+    $sqlpro = "SELECT * FROM users WHERE uname='$uname';";
     $res = mysqli_query($conn, $sqlpro);
     $row = mysqli_fetch_array($res);
     $admin = $row['admin'];
-    $uname = $row['uname'];
+    
 }
+
+
 
 ?>
 
@@ -37,30 +45,58 @@ if(isset($_SESSION['uid'])){
             document.getElementById(sbm).className = "sbm"; 
         }
     }
+    
+            var input1 = "title-update";
+            var input2 = "price-update";
+            var input3 = "desc-update";
+            var sbm = "submit-updates";
+                    
     </script>
-    <div class="container">
-        <div class="inner-bg-cover">
-            <img src=<?php echo $img; ?>/>
-            <script>
-                var input1 = "title-update";
-                var input2 = "price-update";
-                var input3 = "desc-update";
-                var sbm = "submit-updates"
-                </script>
-            <form action = "includes/item-helper.php" method="POST">
-            <input class="show-btn" type="button" name="show-btn" value="Edit" onclick="txtBox(input1,sbm);txtBox(input2, sbm); txtBox(input3, sbm)" />
-                <h3><?php echo $title; ?></h3>
-                <input class="stayHidden" name="listingID" id="listingID" value=<?php echo $lid?>>
-                <input class="hide" type="text" name="title-update" id="title-update" value=<?php echo $title ?>>
-                <p><?php echo $price; ?></p>
-                <input class="hide" type="text" name="price-update" id="price-update" value=<?php echo $price ?>>
-                <p><?php echo $desc; ?></p>
-                <input class="hide" type="text" name="desc-update" id="desc-update" value=<?php echo $desc ?>>
-                <input class = "sbm" type="submit" name="submit-updates" id="submit-updates"/>
-            </form>
+
+    
+    <?php
+
+    if($admin || strcmp($author, $uname) == 0){ //Checks if the session user is an admin or is the author of the post
+        echo'
+        <div class="container">
+            <div class="inner-bg-cover">
+                <img src='.$img.'>
+                
+                <form action = "includes/item-helper.php" method="POST">
+                <input class="show-btn" type="button" name="show-btn" value="Edit" onclick="txtBox(input1,sbm);txtBox(input2, sbm); txtBox(input3, sbm)" />
+                    <h3>'.$title.'<h3>
+                    <input class="stayHidden" name="listingID" id="listingID" value='.$lid.'>
+                    <input class="hide" type="text" name="title-update" id="title-update" value="'.$title.'">
+                    <p>'.$price.'</p>
+                    <input class="hide" type="text" name="price-update" id="price-update" value="'.$price.'">
+                    <p>'.$desc.'</p>
+                    <textarea class="hide" type="text" rows="10" cols="25" name="desc-update" id="desc-update">'.$desc.'</textarea>
+                    <input class = "sbm" type="submit" name="submit-updates" id="submit-updates">
+                </form>
+                
+
+            </div>
+        </div>';
+    }else{ //case that it is just a normal user 
+        echo'
+        <div class="container">
+            <div class="inner-bg-cover">
+                <img src='.$img.'/>
+                
+                    <h3>'.$title.'</h3>
+
+                    <p>'.$price.'</p>
+
+                    <p>'.$desc.'</p>
+                    
+                
             
-
-        </div>
-    </div>
-
+            </div>
+        </div>';
+    }
+    ?>
 </main>
+
+
+
+        
