@@ -1,0 +1,16 @@
+
+.bg-footer-full{
+    background-color: #EEEEEE;
+    width: 100%;
+}
+
+.center-me {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.push-bot{
+    bottom: 0px;
+}
