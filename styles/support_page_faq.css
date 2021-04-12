@@ -1,6 +1,6 @@
 .outer-bg-cover {
     background-color: #e39774;
-    height: 100vh;
+    height:max-content;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
@@ -9,7 +9,7 @@
 
 .inner-bg-cover {
     background-color: #ffffff;
-    height: 100vh;
+    height:max-content;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
@@ -70,6 +70,22 @@
 .buffer{
     padding: 5%;
 }
-.question-form{
+.support-form{
     text-align: center;
+    padding: 20px;
+}
+
+.form-group {
+    padding-top: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #326273;
+    color: #ffffff;
+    transition: 0.25s all;;
 }
