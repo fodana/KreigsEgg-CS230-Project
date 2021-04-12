@@ -28,7 +28,16 @@ img{
     width: auto;
 }
 
+.def-btn {
+    background-color: #326273;
+    color: #ffffff;
+    transition: 0.25s all;
+}
 
+.def-btn:hover {
+    background-color: #5c9ead;
+    color: #eeeeee;
+}
 
 
 .hide{
@@ -90,3 +99,16 @@ img{
 .stayHidden{
     display:none;
 }
+
+.seller-info{
+    display:none;
+}
+
+.show-info{
+    display:grid;
+    border: 1px solid #326273;
+    text-align:center;
+    color: #326273;
+}
+
+

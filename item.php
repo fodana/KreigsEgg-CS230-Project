@@ -1,3 +1,4 @@
+
 <?php
 require 'includes/header.php';
 require 'includes/dbhandler.php';
@@ -16,6 +17,13 @@ $img = $row['imagePath'];
 $desc = $row['Description'];
 $price = $row['Price'];
 $author = $row['uname'];
+
+$sql2 = "SELECT * FROM profiles WHERE uname='$author'";
+$query2 = mysqli_query($conn, $sql2);
+$row2 = mysqli_fetch_assoc($query2);
+
+
+
 
 $admin = 0;
 
@@ -36,6 +44,9 @@ if(isset($_SESSION['uname'])){
 <main class="outer-bg-cover">
     <link rel="stylesheet" href="styles/item.css">
     <script>
+    function req(){
+        document.getElementById("seller-info").className = "show-info";
+    }
     function txtBox(input,sbm) {
         if(document.getElementById(input).className == "hide"){
             document.getElementById(input).className = "show";
@@ -89,7 +100,12 @@ if(isset($_SESSION['uname'])){
 
                     <p>'.$desc.'</p>
                     
-                
+                    <a href="#" class="btn btn-lg def-btn btn-lg position-relative"  onclick = "req();" >Request Seller Info</a>    
+                    <div class = "seller-info" id = "seller-info">
+                        <h5>Seller Email: '.$row2['email'].' </h3>
+                        <h5>Seller Phone Number: '.$row2['phnum'].' </h3>
+                        
+                    </div>
             
             </div>
         </div>';

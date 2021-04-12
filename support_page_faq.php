@@ -62,32 +62,34 @@ require 'includes/header.php';
                     </div>
                 </div>
             </div>
-            <div class="question-form center-me">
-                <form action="includes/support_page_faq-helper.php" method="post">
-                    <div class="white-text">
-                        <h1 style="font-size: 25px; color: black;">Question not answered?</h1>
-                        <h1 style="font-size: 25px; color: black;">Please leave us a question, and we'll get back to
-                            you!</h1>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" name="fname" placeholder="First Name" required
-                                autofocus>
+            <div class="h-80 container center-me">
+                <div class="support-form">
+                    <form action="includes/support_page_faq-helper.php" method="post">
+                        <div class="white-text">
+                            <h1 style="font-size: 25px; color: black;">Question not answered?</h1>
+                            <h1 style="font-size: 15px; color: black;">Please leave us a question, and we'll get back to
+                                you!</h1>
                         </div>
-                        <div class="col">
-                            <input type="text" class="form-control" name="lname" placeholder="Last Name" required
-                                autofocus>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" name="fname" placeholder="First Name"
+                                        required autofocus>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" name="lname" placeholder="Last Name"
+                                        required autofocus>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <input type="email" class="form-control" name="email" placeholder="Email Address" required
-                            autofocus>
-                        <input type="text" class="form-control" name="question" placeholder="Enter your question here"
-                            required autofocus>
-                        <button class="btn-out btn-lg submit-btn btn-black" name="question-submit" type="submit">Submit
+                        <input type="email" id="inputEmail" class="form-control" name="email"
+                            placeholder="Email Address" required autofocus>
+                        <textarea class="form-control" id="question" name="question" cols="18" rows="6"
+                            placeholder="Please enter your question here."></textarea>
+                        <button class="btn-out btn-lg submit-btn btn-block" name="question-submit" type="submit">Submit
                             Question</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
             <div class="contact">
                 <div class="buffer">
@@ -102,6 +104,7 @@ require 'includes/header.php';
                 </p>
                 <div class="buffer">
                 </div>
+                <p class="mt-4 mb-3 text-muted">&copy: 2018-2023</p>
             </div>
         </div>
     </div>
