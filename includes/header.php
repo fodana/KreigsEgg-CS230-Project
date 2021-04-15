@@ -58,6 +58,9 @@ session_start();
                             <li class="nav-item">
                                 <a class="nav-link nav-piece" style="color: #EEEEEE" href="includes/logout.php">Logout</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-piece" style="color: #EEEEEE" href="favorites.php">Favorites</a>
+                            </li>
                             ';
                         }else{
                             echo'

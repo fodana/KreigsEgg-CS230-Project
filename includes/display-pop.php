@@ -24,19 +24,21 @@ if($_SESSION['pop'] == NULL){
         }
         echo'
         <div class="card custom-card" style="width: 22rem;">
-            <a href=item.php?lid='.$row['lid'].'>
-                <img class="card-img-top format-img-size" src="'.$row['imagePath'].'" alt="'.$row['Title'].' picture">
-                <div class="card-body">
-                    <h5 class="card-title">'.$row['Title'].'</h5>
-                    <h5 class="card-title">$'.$row['Price'].'</h5>
-                    <p class="card-text">'.$row['Description'].'</p>
-                    <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
+            <form action="includes/favorites-helper.php" method="post">
+                 <a href=item.php?lid='.$row['lid'].'>
+                    <img class="card-img-top format-img-size" src="'.$row['imagePath'].'" alt="'.$row['Title'].' picture">
+                    <div class="card-body">
+                        <h5 class="card-title">'.$row['Title'].'</h5>
+                        <h5 class="card-title">$'.$row['Price'].'</h5>
+                        <p class="card-text">'.$row['Description'].'</p>
+                        <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
+                    
+                        <input type="hidden" name="lid" value="'.$row['lid'].'">
+                        <button name="fav-submit" type="submit"><img src="images/heart.png" width="24" height="24"></button>
 
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                        <i onclick="this.style.color = \'#FF0000\'" id="heart" href="Favorited" class="fa fa-heart" style="font-size:30px"></i>
-
-                </div>
-            </a>
+                    </div>
+                </a>
+            </form> 
         </div>
         ';
         if($counter == 3){

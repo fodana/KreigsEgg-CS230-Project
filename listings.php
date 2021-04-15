@@ -87,7 +87,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="psu" id="psuBox">
                             <label class="form-check-label" for="psuBox">
-                                Power Supplys
+                                Power Supplies
                             </label>
                         </div>
                     </div>
