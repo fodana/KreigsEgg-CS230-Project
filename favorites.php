@@ -10,10 +10,11 @@ require 'includes/header.php';
         <div class="inner-bg-cover">
             <div class="row">
                 <?php
-            
+                    
                     echo'<h5 class="results center-me">Favorites</h5>';
 
-                    $sql = "SELECT * FROM favorites";
+                    $uname = $_SESSION['uname'];
+                    $sql = "SELECT * FROM favorites WHERE uname=$uname";
                     $query = mysqli_query($conn, $sql);
                     
 
@@ -51,7 +52,8 @@ require 'includes/header.php';
                             }
                         }    
                     }
-                    ?>
+                
+                ?>
             </div>
         </div>
     </div>
