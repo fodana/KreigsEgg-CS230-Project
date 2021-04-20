@@ -1,4 +1,3 @@
-
 <?php
 require 'includes/header.php';
 require 'includes/dbhandler.php';
@@ -44,27 +43,27 @@ if(isset($_SESSION['uname'])){
 <main class="outer-bg-cover">
     <link rel="stylesheet" href="styles/item.css">
     <script>
-    function req(){
+    function req() {
         document.getElementById("seller-info").className = "show-info";
     }
-    function txtBox(input,sbm) {
-        if(document.getElementById(input).className == "hide"){
+
+    function txtBox(input, sbm) {
+        if (document.getElementById(input).className == "hide") {
             document.getElementById(input).className = "show";
             document.getElementById(sbm).className = "sbmshow";
-        }else{
+        } else {
             document.getElementById(input).className = "hide";
-            document.getElementById(sbm).className = "sbm"; 
+            document.getElementById(sbm).className = "sbm";
         }
     }
-    
-            var input1 = "title-update";
-            var input2 = "price-update";
-            var input3 = "desc-update";
-            var sbm = "submit-updates";
-                    
+
+    var input1 = "title-update";
+    var input2 = "price-update";
+    var input3 = "desc-update";
+    var sbm = "submit-updates";
     </script>
 
-    
+
     <?php
 
     if($admin || strcmp($author, $uname) == 0){ //Checks if the session user is an admin or is the author of the post
@@ -106,13 +105,29 @@ if(isset($_SESSION['uname'])){
                         <h5>Seller Phone Number: '.$row2['phnum'].' </h3>
                         
                     </div>
-            
             </div>
         </div>';
     }
     ?>
+    <div class="container">
+        <div class="inner-bg-cover">
+            <div class="container" align="center" style="max-width: 800px;">
+                <div class="my-auto">
+                    <form id="comment-form" action="includes/item-helper.php" method="post">
+                        <div class="form-group" style="margin-top: 15px" ;>
+                            <h1 style="font-size: 25px; color: black;">Comments</h1>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="question" name="question" cols="18" rows="6"
+                                placeholder="Enter comment here . . ."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-outline-danger" type="submit" name="comment-submit"
+                                id="comment-submit" style="width: 100%">Comment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
-
-
-
-        
