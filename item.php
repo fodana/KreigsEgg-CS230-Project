@@ -47,7 +47,7 @@ if(isset($_SESSION['uname'])){
     function req(){
         document.getElementById("seller-info").className = "show-info";
     }
-    function txtBox(input,sbm) {
+    function txtBox(input,sbm) {      //toggles between the edit boxes showing or not
         if(document.getElementById(input).className == "hide"){
             document.getElementById(input).className = "show";
             document.getElementById(sbm).className = "sbmshow";
