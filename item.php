@@ -21,7 +21,7 @@ $sql2 = "SELECT * FROM profiles WHERE uname='$author'";
 $query2 = mysqli_query($conn, $sql2);
 $row2 = mysqli_fetch_assoc($query2);
 
-
+$message = "User ".$row['uname']." has sent you their seller info ";
 
 
 $admin = 0;
@@ -43,24 +43,25 @@ if(isset($_SESSION['uname'])){
 <main class="outer-bg-cover">
     <link rel="stylesheet" href="styles/item.css">
     <script>
-    function req() {
-        document.getElementById("seller-info").className = "show-info";
-    }
+        function req() {
+            document.getElementById("seller-info").className = "show-info";
 
-    function txtBox(input, sbm) {
-        if (document.getElementById(input).className == "hide") {
-            document.getElementById(input).className = "show";
-            document.getElementById(sbm).className = "sbmshow";
-        } else {
-            document.getElementById(input).className = "hide";
-            document.getElementById(sbm).className = "sbm";
         }
-    }
 
-    var input1 = "title-update";
-    var input2 = "price-update";
-    var input3 = "desc-update";
-    var sbm = "submit-updates";
+        function txtBox(input, sbm) {
+            if (document.getElementById(input).className == "hide") {
+                document.getElementById(input).className = "show";
+                document.getElementById(sbm).className = "sbmshow";
+            } else {
+                document.getElementById(input).className = "hide";
+                document.getElementById(sbm).className = "sbm";
+            }
+        }
+
+        var input1 = "title-update";
+        var input2 = "price-update";
+        var input3 = "desc-update";
+        var sbm = "submit-updates";
     </script>
 
 
@@ -98,13 +99,14 @@ if(isset($_SESSION['uname'])){
                     <p>'.$price.'</p>
 
                     <p>'.$desc.'</p>
-                    
-                    <a href="#" class="btn btn-lg def-btn btn-lg position-relative"  onclick = "req();" >Request Seller Info</a>    
+
+                    <form action = "includes/item-helper.php" method="POST">
+                    <button class="btn btn-lg def-btn btn-lg position-relative"  type = "submit" id="infoSubmit" name = "infoSubmit" onclick = "req();"> Share Contact Info </button>   
                     <div class = "seller-info" id = "seller-info">
-                        <h5>Seller Email: '.$row2['email'].' </h3>
-                        <h5>Seller Phone Number: '.$row2['phnum'].' </h3>
-                        
+                        <h5>Contact Information Sent! </h3> 
                     </div>
+                    
+                    </form>
             </div>
         </div>';
     }

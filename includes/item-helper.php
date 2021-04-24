@@ -3,6 +3,9 @@ require 'dbhandler.php';
 session_start();
 
 if(isset($_POST['submit-updates'])){
+    
+    
+    
     $newTitle = $_POST['title-update'];
     $newPrice = $_POST['price-update'];
     $newDesc = $_POST['desc-update'];
@@ -17,4 +20,21 @@ if(isset($_POST['submit-updates'])){
     header("Location: ../item.php?lid=$lid&success=UpdateSuccess");
     
 } 
+if(isset($_POST['infoSubmit'])){
+    echo'test';
+    // no clue how to read data from the item.php class. All we have to do 
+    // is get that user name and then reference database for phnum + email.
+    $username = $_POST['.$row['.uname.'].'];
+    //$sql = get phnum and email from users database using $uname of contact info sender;
+    $phnum = $_POST[$row['phnum']];
+    $email = $_POST[$row['email']];
+    echo'$username';
+    $receipt = $_POST[$row2['uname']];
+    $message = "User ".$username." has sent you their seller info ";
+    $sql = "INSERT INTO messages (uname, message, receiver,phnum,email) VALUES ('$username', '$message', '$receipt','$phnum','$email')";
+    mysqli_query($conn, $sql);
+    
+    
+    header("Location: ../item.php?messageSendSuccess");
+}
 
