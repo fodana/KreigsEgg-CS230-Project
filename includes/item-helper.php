@@ -26,7 +26,7 @@ if(isset($_POST['infoSubmit'])){
     $title = $_SESSION['title']; //title of listing
     $receiver = $_SESSION['author']; //person receiving the request's username
 
-    $sql = "SELECT * FROM users WHERE uname='$uname';";
+    $sql = "SELECT * FROM users WHERE uname='$requester';";
     $res = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($res);
     //Contact info for requester
@@ -35,7 +35,7 @@ if(isset($_POST['infoSubmit'])){
 
     
     
-    $message = $message = "$uname has expressed interest in your listing \"$title\". Their contact info is as follows\n Email: $email \n Phone Number: $phnum";
+    $message = $message = "$requester has expressed interest in your listing \"$title\". Their contact info is as follows\n Email: $email \n Phone Number: $phnum";
     $sql = "INSERT INTO messages (requester, receiver, message) VALUES ('$reqester', '$receiver','$message')";
     mysqli_query($conn, $sql);
     
