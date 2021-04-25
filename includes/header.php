@@ -50,10 +50,13 @@ session_start();
                             <a class="nav-link nav-piece" style="color: #EEEEEE" href="support_page_faq.php">Support</a>
                         </li>
 
-                        <?php if(isset($_SESSION['uid'])){
+                        <?php if(isset($_SESSION['uid'])){ //logged in
                             echo'
                             <li class="nav-item">
                                 <a class="nav-link nav-piece" style="color: #EEEEEE" href="profile.php">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-piece" style="color: #EEEEEE" href="messages.php">Messages</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link nav-piece" style="color: #EEEEEE" href="includes/logout.php">Logout</a>
@@ -62,7 +65,7 @@ session_start();
                                 <a class="nav-link nav-piece" style="color: #EEEEEE" href="favorites.php">Favorites</a>
                             </li>
                             ';
-                        }else{
+                        }else{ //not loged in
                             echo'
                             <li class="nav-item">
                                 <a class="nav-link nav-piece" style="color: #EEEEEE" href="login.php">Login</a>
