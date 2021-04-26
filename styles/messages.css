@@ -22,3 +22,16 @@
     justify-content: center;
     padding-top: 40px;
 }
+
+.display{
+    display:grid;
+    justify-content:center;
+    padding-bottom: 10px;
+    padding-top:10px;
+}
+.title{
+    display:grid;
+    justify-content:center;
+    
+    padding-top:30px;
+}
