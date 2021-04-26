@@ -83,18 +83,21 @@ if(isset($_SESSION['uname'])){
         echo'
         <div class="container">
             <div class="inner-bg-cover">
-                <img src='.$img.'>
+                    
+                    <img src='.$img.'>
                 
                 <form action = "includes/item-helper.php" method="POST">
                 <input class="show-btn" type="button" name="show-btn" value="Edit" onclick="txtBox(input1,sbm);txtBox(input2, sbm); txtBox(input3, sbm)" />
-                    <h3>'.$title.'<h3>
-                    <input class="stayHidden" name="listingID" id="listingID" value='.$lid.'>
-                    <input class="hide" type="text" name="title-update" id="title-update" value="'.$title.'">
-                    <p>'.$price.'</p>
-                    <input class="hide" type="text" name="price-update" id="price-update" value="'.$price.'">
-                    <p>'.$desc.'</p>
-                    <textarea class="hide" type="text" rows="10" cols="25" name="desc-update" id="desc-update">'.$desc.'</textarea>
-                    <input class = "sbm" type="submit" name="submit-updates" id="submit-updates">
+                    <div class = "inner-text">    
+                        <h3>'.$title.'<h3>
+                        <input class="stayHidden" name="listingID" id="listingID" value='.$lid.'>
+                        <input class="hide" type="text" name="title-update" id="title-update" value="'.$title.'">
+                        <p>Price: '.$price.'</p>
+                        <input class="hide" type="text" name="price-update" id="price-update" value="'.$price.'">
+                        <p>Description: '.$desc.'</p>
+                        <textarea class="hide" type="text" rows="10" cols="25" name="desc-update" id="desc-update">'.$desc.'</textarea>
+                        <input class = "sbm" type="submit" name="submit-updates" id="submit-updates">
+                    </div>
                 </form>
                 
 
@@ -104,20 +107,22 @@ if(isset($_SESSION['uname'])){
         echo'
         <div class="container">
             <div class="inner-bg-cover">
-                <img src='.$img.'/>
+                <div class = "inner-text">    
+                   
+                    <img src='.$img.'/>
                 
-                    <h3>'.$title.'</h3>
+                    <h3  >'.$title.'</h3>
 
-                    <p>'.$price.'</p>
+                    <p>Price: '.$price.'</p>
 
-                    <p>'.$desc.'</p>
+                    <p>Description: '.$desc.'</p>
 
                     <form action = "includes/item-helper.php" method="POST">
                     <button class="btn btn-lg def-btn btn-lg position-relative"  type = "submit" id="infoSubmit" name = "infoSubmit" onclick = "req();"> Share Contact Info </button>   
                     <div class = "seller-info" id = "seller-info">
                         <h5>Contact Information Sent! </h3> 
                     </div>
-                    
+                    </div>
                     </form>
             </div>
         </div>';

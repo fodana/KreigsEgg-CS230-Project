@@ -9,23 +9,31 @@
 
 .inner-bg-cover {
     background-color: #ffffff;
-    height: 1000px;
+    height: auto;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.36);
-}
-
-.center-me {
-    display: flex;
+    display: grid;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 10px;
+}
+.inner-text{
+    display: grid;
+    justify-content: center;
+    padding-top: 5px;
+}
+.center-me {
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
 }
 
-img{
+.inner-bg-cover img{
     height: 200px;
     width: auto;
+    
 }
 
 .def-btn {
