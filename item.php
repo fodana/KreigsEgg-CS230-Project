@@ -129,7 +129,7 @@ if(isset($_SESSION['uname'])){
     }
     ?>
 <span id="testAvg"></span>
-    <div class="container" style="max-height: 300px;">
+    <div class="container" style="max-height: 300px; margin-top: 15px;">
         <div class="inner-bg-cover" style="max-height: 300px;">
             <div class="container" align="center" style="max-width: 800px;">
                 <div class="my-auto">
