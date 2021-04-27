@@ -128,25 +128,49 @@ if(isset($_SESSION['uname'])){
         </div>';
     }
     ?>
-    <div class="container">
-        <div class="inner-bg-cover">
+<span id="testAvg"></span>
+    <div class="container" style="max-height: 300px;">
+        <div class="inner-bg-cover" style="max-height: 300px;">
             <div class="container" align="center" style="max-width: 800px;">
                 <div class="my-auto">
-                    <form id="comment-form" action="includes/item-helper.php" method="post">
+                    <form id="comment-form" action="includes/comment-helper.php" method="post">
                         <div class="form-group" style="margin-top: 15px" ;>
-                            <h1 style="font-size: 25px; color: black;">Comments</h1>
+                            <h1 style="font-size: 15px; color: black;">Comments</h1>
+                            <textarea name="comment" id="comment-text" cols="80" rows="5"
+                                placeholder="enter commment . . ."></textarea>
+                            <input type="hidden" name="lid" value="<?php  echo $_GET['lid'];?>">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="question" name="question" cols="18" rows="6"
-                                placeholder="Enter comment here . . ."></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-outline-danger" type="submit" name="comment-submit"
-                                id="comment-submit" style="width: 100%">Comment</button>
+                            <button class="btn-out btn-lg submit-btn btn-block" name="comment-submit"
+                                type="submit">Submit
+                                Comment</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <span id="comment_list"></span>
 </main>
+
+<script type="text/javascript">
+var rateIndex = -1;
+var id = <?php echo $_GET['lid'];?>;
+
+
+$(document).ready(function() {
+    xhr_getter('display-comments.php?lid=', "comment_list");
+
+    function xhr_getter(prefix, element) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById(element).innerHTML = this.responseText;
+            }
+        };
+        url = prefix + id;
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    }
+});
+</script>
