@@ -2,7 +2,7 @@
 
 $servename = "localhost";
 $DBuname = "phpmyadmin";
-$DBPass = "password27";
+$DBPass = "cs230Group10Password";
 $DBname = "kreigeggDB";
 
 $conn = mysqli_connect($servename, $DBuname, $DBPass, $DBname);
