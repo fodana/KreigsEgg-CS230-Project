@@ -5,18 +5,19 @@ require 'includes/dbhandler.php'
 
 <main >
     <div class = "outer-cover">   
-<link rel="stylesheet" href="styles/profile.css">
-
+    <link rel="stylesheet" href="styles/profile.css">
+    
     <script>
+    //this function makes the text boxes used for editing visible to the user.
     function txtBox(input,sbm) {
         document.getElementById(input).className = "show";
         document.getElementById(sbm).className = "sbmshow";
     }
-
+    //allows for profile pic to be changed on click
     function triggered() {
         document.querySelector("#prof-image").click();
     }
-
+    //shows preview of potential profile picture change
     function preview(e) {
         if (e.files[0]) {
             var reader = new FileReader();
@@ -29,9 +30,11 @@ require 'includes/dbhandler.php'
     </script>
 
     <?php
+
 if(isset($_SESSION['uid'])){
     //username after login
     $prof_user = $_SESSION['uname'];
+    //acces database to get profile information
     $sqlpro = "SELECT * FROM profiles WHERE uname='$prof_user';";
     $res = mysqli_query($conn, $sqlpro);
     $row = mysqli_fetch_array($res);
@@ -76,28 +79,32 @@ if(isset($_SESSION['uid'])){
                 <label for="prof-uname" id="uname-style" style=" padding-left: 20px;  font-weight: normal; color: #326273;"><?php echo $prof_user?> </label>
             </div>
             
-
             <div class="email" style="padding-bottom: 5px;font-weight: 400; font-size: 20px">Email: <label for="email-dis"
                     id="email-style" style=" padding-left: 20px;  font-weight: normal; color: #326273;"><?php echo $row['email']?></label>
+
                 <script>
+                //name of classes that the txtBox function will make visible
                 var input = "email-update";
                 var sbm = "submit"
                 </script>
+
                 <form action="includes/profile-helper.php" method="POST">
                     <input class = "show-btn" type="button" name="show-btn" value="Change Email" onclick="txtBox(input,sbm)" />
                     <input class="hide" type="text" name="email-update" id="email-update" value="enter new email" />
                     <input class = "sbm" type="submit" name="submit" id="submit">
                 </form>
-                <!-- <br> -->
             </div>
             
             <div class="fname" style="padding-bottom: 5px;font-weight: 400; font-size: 20px">First Name: <label for="fname-dis" id="fname-style" style=" padding-left: 20px;  font-weight: normal; color: #326273;">
                     <?php echo $row['fname']?></label>
                 <form action="includes/profile-helper.php" method="POST">
+
                     <script>
+                     //name of classes that the txtBox function will make visible
                     var input2 = "fname-update";
                     var sbm2 = "submitfname"
                     </script>
+
                     <input class = "show-btn" type="button" name="show-btn" value="Change First Name" onclick="txtBox(input2,sbm2)" />
                     <input class="hide2" type="text" name="fname-update" id="fname-update"
                         value="enter new first name" />
@@ -110,7 +117,9 @@ if(isset($_SESSION['uid'])){
             <div class="lname" style="padding-bottom: 5px; font-weight: 400; font-size: 20px;">Last Name: <label for="lname-dis" id="lname-style" style=" padding-left: 20px;  font-weight: normal; color: #326273;">
                     <?php echo $row['lname']?></label>
                 <form action="includes/profile-helper.php" method="POST">
+
                     <script>
+                     //name of classes that the txtBox function will make visible
                     var input3 = "lname-update";
                     var sbm3 = "submitlname"
                     </script>
@@ -126,10 +135,13 @@ if(isset($_SESSION['uid'])){
             <div class="phnum" style="padding-bottom: 5px;font-weight: 400; font-size: 20px">Phone number: <label for="phnum-dis" id="phnum-style" style=" padding-left: 20px;  font-weight: normal; color: #326273;">
                     <?php echo $row['phnum']?></label>
                 <form action="includes/profile-helper.php" method="POST">
+
                     <script>
+                     //name of classes that the txtBox function will make visible
                     var input4 = "phnum-update";
                     var sbm4 = "submitphnum"
                     </script>
+
                     <input class = "show-btn" type="button" name="show-btn" value="Change Phone Number" onclick="txtBox(input4,sbm4)" />
                     <input class="hide4" type="text" name="phnum-update" id="phnum-update" value="ex. 999-999-9999" />
                     <input class = "sbm4" type="submit" name="submitphnum" id= "submitphnum">
@@ -138,7 +150,7 @@ if(isset($_SESSION['uid'])){
 
             </div>
             <div class = buffer>
-                asdf
+                this is a buffer for the footer
             </div>
         </div>
     </div>
