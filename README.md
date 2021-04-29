@@ -7,25 +7,34 @@ KreigsEgg is an online marketplace that brings buyers and sellers of computer co
 
 ## User Examples
 
-Page used to post items for sale
+The image below shows the page used to post items for sale
 ![KEex 1](https://user-images.githubusercontent.com/78047330/116485070-5d401000-a858-11eb-972c-9ea486ee81d0.PNG)
 
-Listing page that contains all of the items for sale
+The image below shows the listing page that contains all of the items for sale
 
 ![kreigsegg1](https://user-images.githubusercontent.com/78047330/116485908-67fba480-a85a-11eb-8837-d543bd3421fa.png)
 
-After clicking on an item, you can send your contact information to the seller of the product
+As the seller of the product, you can edit the details of the post as shown below
 
 ![kreigsegg2](https://user-images.githubusercontent.com/78047330/116485922-721da300-a85a-11eb-8e6a-ffdc6405c065.png)
 
+As a potential buyer, you can send your contact information to the seller of the product as shown below
+
+![img3](https://user-images.githubusercontent.com/78047330/116486759-59ae8800-a85c-11eb-954f-308f6e652737.png)
 
 ## Contributers
 
 Quinten Jeckering - https://github.com/quintenjeckering
+
 Jacob Durgin - https://github.com/jakedurg
+
 Dana Foual - https://github.com/fodana
+
 Michael Tarantino - https://github.com/MichaelTarantino 
+
 Dawson Smetana - https://github.com/djs0065
+
 Shayna Brewer - https://github.com/shaynabrewer
+
 Quinelle Richardson - https://github.com/Quinelle
 
