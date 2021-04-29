@@ -31,7 +31,7 @@ if($_SESSION['pop'] == NULL){
                         <h5 class="card-title">'.$row['Title'].'</h5>
                         <h5 class="card-title">$'.$row['Price'].'</h5>
                         <p class="card-text">'.$row['Description'].'</p>
-                        <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
+                        
                     
                         <input type="hidden" name="lid" value="'.$row['lid'].'">
                         <button name="fav-submit" type="submit"><img src="images/heart.png" width="24" height="24"></button>
@@ -76,7 +76,7 @@ if($_SESSION['pop'] == NULL){
                 <h5 class="card-title">$'.$row['Price'].'</h5>
                 <p class="card-text">'.$row['Description'].'</p>
                 <div>
-                    <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
+                    
                 </div>
             </div>
         </div>

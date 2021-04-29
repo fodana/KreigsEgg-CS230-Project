@@ -48,27 +48,27 @@ if(isset($_SESSION['uname'])){
     function req(){
         document.getElementById("seller-info").className = "show-info";
     }
-    function txtBox(input,sbm) {      //toggles between the edit boxes showing or not
-        if(document.getElementById(input).className == "hide"){
+    // function txtBox(input,sbm) {      //toggles between the edit boxes showing or not
+    //     if(document.getElementById(input).className == "hide"){
+    //         document.getElementById(input).className = "show";
+    //         document.getElementById(sbm).className = "sbmshow";
+    //     }else{
+    //         document.getElementById(input).className = "hide";
+    //         document.getElementById(sbm).className = "sbm"; 
+    //     function req() {
+    //         document.getElementById("seller-info").className = "show-info";
+
+    //     }
+
+    function txtBox(input, sbm) {
+        if (document.getElementById(input).className == "hide") {
             document.getElementById(input).className = "show";
             document.getElementById(sbm).className = "sbmshow";
-        }else{
+        } else {
             document.getElementById(input).className = "hide";
-            document.getElementById(sbm).className = "sbm"; 
-        function req() {
-            document.getElementById("seller-info").className = "show-info";
-
+            document.getElementById(sbm).className = "sbm";
         }
-
-        function txtBox(input, sbm) {
-            if (document.getElementById(input).className == "hide") {
-                document.getElementById(input).className = "show";
-                document.getElementById(sbm).className = "sbmshow";
-            } else {
-                document.getElementById(input).className = "hide";
-                document.getElementById(sbm).className = "sbm";
-            }
-        }
+    }
 
         var input1 = "title-update";
         var input2 = "price-update";

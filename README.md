@@ -1,54 +1,40 @@
+![image](https://user-images.githubusercontent.com/78047330/116485385-14d52200-a859-11eb-81e7-23938d5549cb.png)
+
 # Product Name
-Short blurb about what your product does.
+KreigsEgg
 
-One to two paragraph statement about your product and what it does.
+KreigsEgg is an online marketplace that brings buyers and sellers of computer components and accessories together. Using KreigsEgg as a seller, users can upload photos and details of the computer components that they wish to sell. As a buyer, users can browse a listing page that contains all of the components sellers have posted. Users can use the search function to show only the type of components they are interested in purchasing. KregisEgg is only responsible for setting up a potential deal between buyers and sellers. This means that all transactions occur outside of KreigsEgg. In order to accomplish this, buyers can view items they wish to purchase and then send the seller of that item their own contact information they provided at sign up.
 
+## User Examples
 
+The image below shows the page used to post items for sale
+![KEex 1](https://user-images.githubusercontent.com/78047330/116485070-5d401000-a858-11eb-972c-9ea486ee81d0.PNG)
 
-## Installation
-#### OS X & Linux:
-```
-npm install my-crazy-module --save
-```
-#### Windows:
-```
-edit autoexec.bat
-```
-## Usage example
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+The image below shows the listing page that contains all of the items for sale
 
-For more examples and usage, please refer to the Wiki.
+![kreigsegg1](https://user-images.githubusercontent.com/78047330/116485908-67fba480-a85a-11eb-8837-d543bd3421fa.png)
 
-## Development setup
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-```
-make install
-npm test
-```
-## Release History
+As the seller of the product, you can edit the details of the post as shown below
 
-- 0.2.1
-  - CHANGE: Update docs (module code remains unchanged)
+![kreigsegg2](https://user-images.githubusercontent.com/78047330/116485922-721da300-a85a-11eb-8e6a-ffdc6405c065.png)
 
-- 0.2.0
-  - CHANGE: Remove ```setDefaultXYZ()```
-  - ADD: Add ```init()```
+As a potential buyer, you can send your contact information to the seller of the product as shown below
 
-- 0.1.1
-  - FIX: Crash when calling ```baz()``` (Thanks @GenerousContributorName!)
+![img3](https://user-images.githubusercontent.com/78047330/116486759-59ae8800-a85c-11eb-954f-308f6e652737.png)
 
-- 0.1.0
-  - The first proper release
-  - CHANGE: Rename ```foo()``` to ```bar()```
+## Contributers
 
-- 0.0.1
-  - Work in progress
+Quinten Jeckering - https://github.com/quintenjeckering
 
-## Meta
+Jacob Durgin - https://github.com/jakedurg
 
-Your Name – YourEmail@example.com
+Dana Foual - https://github.com/fodana
 
-Distributed under the XYZ license. See LICENSE for more information.
+Michael Tarantino - https://github.com/MichaelTarantino 
 
-https://github.com/yourname/github-link
+Dawson Smetana - https://github.com/djs0065
+
+Shayna Brewer - https://github.com/shaynabrewer
+
+Quinelle Richardson - https://github.com/Quinelle
 
