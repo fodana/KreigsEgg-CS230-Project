@@ -78,7 +78,7 @@ if(isset($_POST['prof-submit'])){
     else{
         $new_name = uniqid('',true).".".$ext;
 
-        $destination = '../profiles/'.$new_name;
+        $destination = 'profiles/'.$new_name;
 
         $sql = "UPDATE profiles SET profpic='$destination' WHERE uname='$uname'";
     
