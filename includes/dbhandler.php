@@ -3,7 +3,7 @@
 $servename = "localhost";
 $DBuname = "phpmyadmin";
 $DBPass = "cs230Group10Password";
-$DBname = "kreigeggDB";
+$DBname = "kreigsEgg";
 
 $conn = mysqli_connect($servename, $DBuname, $DBPass, $DBname);
 
