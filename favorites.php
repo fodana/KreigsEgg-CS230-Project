@@ -10,13 +10,10 @@ require 'includes/header.php';
         <div class="inner-bg-cover">
             <div class="row">
                 <?php
-                    
-                    session_start();
-                
                     echo'<h5 class="results center-me">Favorites</h5>';
 
                     $uname = $_SESSION['uname'];
-                    $sql = "SELECT * FROM favorites WHERE uname=$uname";
+                    $sql = "SELECT * FROM favorites WHERE uname='$uname'";
                     $query = mysqli_query($conn, $sql);
                     
 
