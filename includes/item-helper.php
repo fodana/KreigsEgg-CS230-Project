@@ -36,7 +36,7 @@ if(isset($_POST['infoSubmit'])){
     
     
     $message = $message = "$requester has expressed interest in your listing \"$title\". Their contact info is as follows\n Email: $email \n Phone Number: $phnum";
-    $sql = "INSERT INTO messages (requester, receiver, message) VALUES ('$reqester', '$receiver','$message')";
+    $sql = "INSERT INTO messages (requester, receiver, message) VALUES ('$requester', '$receiver','$message')";
     mysqli_query($conn, $sql);
     
     
