@@ -1,0 +1,843 @@
+{
+  "id": "629fb1f4-c4b4-4ed6-a1fb-15830a79824e",
+  "version": "2.0",
+  "name": "Group 10",
+  "url": "http://100.26.251.58/listings.php",
+  "tests": [{
+    "id": "8fbbf0aa-8904-4327-ab27-e3d5aaf68be8",
+    "name": "Item with \"new\" tag display",
+    "commands": [{
+      "id": "32906d8c-64e2-4c5f-9c30-520f2c17f271",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/listings.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02990601-09f4-46fd-a28f-e20ad525068f",
+      "comment": "",
+      "command": "click",
+      "target": "id=newBox",
+      "targets": [
+        ["id=newBox", "id"],
+        ["name=new", "name"],
+        ["css=#newBox", "css:finder"],
+        ["xpath=//input[@id='newBox']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ae3fb8d-abeb-48e2-b99c-202c73054b36",
+      "comment": "",
+      "command": "click",
+      "target": "name=tagSearch-submit",
+      "targets": [
+        ["name=tagSearch-submit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='tagSearch-submit']", "xpath:attributes"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d5dee7e-e6f5-42f7-9d59-fdd60b579ede",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(2) > .card:nth-child(1)",
+      "targets": [
+        ["css=.row:nth-child(2) > .card:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76353975-d7d6-4d6a-b20a-b9417ac40c63",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(2) > .card:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(2) > .card:nth-child(2)", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7bbf0de-c989-42b7-bbd6-a861ea9f0c45",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card:nth-child(3)",
+      "targets": [
+        ["css=.card:nth-child(3)", "css:finder"],
+        ["xpath=//div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04071b4b-152f-475c-9379-1fbe55dda1c3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(4) > .card:nth-child(1)",
+      "targets": [
+        ["css=.row:nth-child(4) > .card:nth-child(1)", "css:finder"],
+        ["xpath=//div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88573026-9d76-4447-bd4a-444f89faf8b2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(4) > .card:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(4) > .card:nth-child(2)", "css:finder"],
+        ["xpath=//div[4]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "18dab1c5-2ce3-4c9c-958a-9989ae7cfc50",
+    "name": "Items without tag do not display",
+    "commands": [{
+      "id": "0647509a-5201-4ead-b415-ef67efb5de2a",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/listings.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3117f82-042f-4299-9975-739e194ecc37",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listings",
+      "targets": [
+        ["linkText=Listings", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Listings')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'listings.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb9c0cb0-f1c3-4154-8c0c-073fe9a2de48",
+      "comment": "",
+      "command": "click",
+      "target": "id=newBox",
+      "targets": [
+        ["id=newBox", "id"],
+        ["name=new", "name"],
+        ["css=#newBox", "css:finder"],
+        ["xpath=//input[@id='newBox']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "becefb36-01c3-4022-9e78-76dc1d14340c",
+      "comment": "",
+      "command": "click",
+      "target": "id=towerBox",
+      "targets": [
+        ["id=towerBox", "id"],
+        ["name=rig", "name"],
+        ["css=#towerBox", "css:finder"],
+        ["xpath=//input[@id='towerBox']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03de5334-910f-4ab6-be74-f7ba0012aada",
+      "comment": "",
+      "command": "click",
+      "target": "name=tagSearch-submit",
+      "targets": [
+        ["name=tagSearch-submit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='tagSearch-submit']", "xpath:attributes"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "111acc97-8c69-4ba7-b05d-1b909d6c0a47",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.row:nth-child(2) > .card:nth-child(1) a",
+      "targets": [
+        ["css=.row:nth-child(2) > .card:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(@href, 'item.php?lid=45')]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2d3aac06-1fbe-4892-a283-a5b26ec783b6",
+    "name": "Items with \"used\" tag display",
+    "commands": [{
+      "id": "5a29eb51-f6a3-4a0e-b2cd-355c9aafc409",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/listings.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ed691e8-8775-461f-8003-071195e9e032",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listings",
+      "targets": [
+        ["linkText=Listings", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Listings')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'listings.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d86cf73-f005-4703-8408-48f480503f7a",
+      "comment": "",
+      "command": "click",
+      "target": "id=UsedBox",
+      "targets": [
+        ["id=UsedBox", "id"],
+        ["name=used", "name"],
+        ["css=#UsedBox", "css:finder"],
+        ["xpath=//input[@id='UsedBox']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b22a50e4-eef2-4f51-a998-50f6e3db2902",
+      "comment": "",
+      "command": "click",
+      "target": "name=tagSearch-submit",
+      "targets": [
+        ["name=tagSearch-submit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='tagSearch-submit']", "xpath:attributes"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad1b076d-4901-484a-88d3-4db67777b66f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(2) > .card:nth-child(1) .card-title:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(2) > .card:nth-child(1) .card-title:nth-child(2)", "css:finder"],
+        ["xpath=//h5[2]", "xpath:position"],
+        ["xpath=//h5[contains(.,'$600')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "531fd93b-e2fa-40d4-824b-da83122ea623",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(2) > .card:nth-child(2) > .card-body",
+      "targets": [
+        ["css=.row:nth-child(2) > .card:nth-child(2) > .card-body", "css:finder"],
+        ["xpath=//div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75449b83-bd66-4e1b-98c4-ca8a5cad16ca",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(2) > .card:nth-child(3) > .card-body",
+      "targets": [
+        ["css=.row:nth-child(2) > .card:nth-child(3) > .card-body", "css:finder"],
+        ["xpath=//div/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fa1b423-a0a4-417e-91f7-b2463ff7605f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(4) > .card:nth-child(1)",
+      "targets": [
+        ["css=.row:nth-child(4) > .card:nth-child(1)", "css:finder"],
+        ["xpath=//div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1895ef8e-35d9-45fc-86d6-ac5947bf6705",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(4) > .card:nth-child(2) .card-title:nth-child(1)",
+      "targets": [
+        ["css=.row:nth-child(4) > .card:nth-child(2) .card-title:nth-child(1)", "css:finder"],
+        ["xpath=//div[4]/div[2]/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Another GPU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03da1a8a-a4cf-4621-adca-1cc7c3f60497",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.row:nth-child(4) > .card:nth-child(3)",
+      "targets": [
+        ["css=.row:nth-child(4) > .card:nth-child(3)", "css:finder"],
+        ["xpath=//div[4]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "461260de-3da5-4240-bb24-46e51beb51d1",
+    "name": "Items with multiple tags display",
+    "commands": [{
+      "id": "e24747c0-6c4e-470f-9a40-3d090a3aee0c",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/listings.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07dd6676-52eb-4b95-a2df-45606233db1d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listings",
+      "targets": [
+        ["linkText=Listings", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Listings')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'listings.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0c10ba6-817b-470e-8771-3b30207297a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=newBox",
+      "targets": [
+        ["id=newBox", "id"],
+        ["name=new", "name"],
+        ["css=#newBox", "css:finder"],
+        ["xpath=//input[@id='newBox']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd5e9e34-f459-4dd0-8090-48527ac4ca79",
+      "comment": "",
+      "command": "click",
+      "target": "id=gpuBox",
+      "targets": [
+        ["id=gpuBox", "id"],
+        ["name=gpu", "name"],
+        ["css=#gpuBox", "css:finder"],
+        ["xpath=//input[@id='gpuBox']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e47bea3d-f5b0-4c96-8b55-6c63d186c681",
+      "comment": "",
+      "command": "click",
+      "target": "name=tagSearch-submit",
+      "targets": [
+        ["name=tagSearch-submit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='tagSearch-submit']", "xpath:attributes"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e9d21df-e776-4198-9371-da5aadd05b0d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b517b254-521c-473b-899e-7d8da1c4fdac",
+    "name": "Items with \"Full PCs\" tag display",
+    "commands": [{
+      "id": "f0e5284b-f2ba-4a3e-87c8-788b280f2cd2",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/listings.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0ec840b-d4e8-4666-8306-b7719b8305f6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listings",
+      "targets": [
+        ["linkText=Listings", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Listings')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'listings.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2daf433-a1e4-4f1c-94b9-977b05a3c81f",
+      "comment": "",
+      "command": "click",
+      "target": "id=towerBox",
+      "targets": [
+        ["id=towerBox", "id"],
+        ["name=rig", "name"],
+        ["css=#towerBox", "css:finder"],
+        ["xpath=//input[@id='towerBox']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b21027e1-7ee7-4dbe-8522-f889f125a48a",
+      "comment": "",
+      "command": "click",
+      "target": "name=tagSearch-submit",
+      "targets": [
+        ["name=tagSearch-submit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='tagSearch-submit']", "xpath:attributes"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be9d5c72-b5f7-4151-bfee-7c72d1356ffd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card",
+      "targets": [
+        ["css=.card", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "929f7bae-0e13-46b3-9a31-e42ff28f1df0",
+    "name": "Item(s) with Graphics Cards display",
+    "commands": [{
+      "id": "8e2c99f6-d540-4f30-809c-3620c9e0f3d8",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/listings.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b16f718c-6326-4e75-a949-c46682fc468f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listings",
+      "targets": [
+        ["linkText=Listings", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Listings')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'listings.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c64848c-3c59-4ff3-8194-b1034bdb68d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=gpuBox",
+      "targets": [
+        ["id=gpuBox", "id"],
+        ["name=gpu", "name"],
+        ["css=#gpuBox", "css:finder"],
+        ["xpath=//input[@id='gpuBox']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5654cbcf-b8c0-4477-8c1f-4df1d66f6bbf",
+      "comment": "",
+      "command": "click",
+      "target": "name=tagSearch-submit",
+      "targets": [
+        ["name=tagSearch-submit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='tagSearch-submit']", "xpath:attributes"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "faff55f1-c86d-4b25-9be3-606191adf916",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card:nth-child(1)",
+      "targets": [
+        ["css=.card:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e441b18e-b7c9-463d-82a2-7cca954ad88e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card:nth-child(2)",
+      "targets": [
+        ["css=.card:nth-child(2)", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "27306dc0-a8fc-4fa1-8e27-a987e90a80f8",
+    "name": "Item(s) with \"CPUs\" tag display",
+    "commands": [{
+      "id": "1981e422-9065-4e5a-b1df-448b9fb6198c",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/listings.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ac44da2-76d2-4695-94ab-8c5907d21047",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listings",
+      "targets": [
+        ["linkText=Listings", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Listings')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'listings.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d733eab3-d381-4087-baf8-f5be4f5a1232",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpuBox",
+      "targets": [
+        ["id=cpuBox", "id"],
+        ["name=cpu", "name"],
+        ["css=#cpuBox", "css:finder"],
+        ["xpath=//input[@id='cpuBox']", "xpath:attributes"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13280b74-9c39-40a8-b0bb-805013244733",
+      "comment": "",
+      "command": "click",
+      "target": "name=tagSearch-submit",
+      "targets": [
+        ["name=tagSearch-submit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='tagSearch-submit']", "xpath:attributes"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ede1c914-5154-4646-85fb-0b89a863a8f9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card",
+      "targets": [
+        ["css=.card", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "35af3bd7-f045-4ae2-925e-56ed3f60fd50",
+    "name": "Item(s) with \"Motherboards\" tag display",
+    "commands": [{
+      "id": "3eb79bf3-ef5c-4e1c-bd4d-7ba887e64345",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/listings.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b938c009-bcaa-4c08-a153-d17afd13c056",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listings",
+      "targets": [
+        ["linkText=Listings", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Listings')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'listings.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70f603c3-ae80-4e0a-b726-a1275b7b6e7a",
+      "comment": "",
+      "command": "click",
+      "target": "id=moboBox",
+      "targets": [
+        ["id=moboBox", "id"],
+        ["name=motherboard", "name"],
+        ["css=#moboBox", "css:finder"],
+        ["xpath=//input[@id='moboBox']", "xpath:attributes"],
+        ["xpath=//div[6]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3c13ab9-9790-4051-9742-d9f93a6be4f9",
+      "comment": "",
+      "command": "click",
+      "target": "name=tagSearch-submit",
+      "targets": [
+        ["name=tagSearch-submit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='tagSearch-submit']", "xpath:attributes"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de2dbdb5-51a4-40a9-8248-6356a0151b13",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card",
+      "targets": [
+        ["css=.card", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7d1bc5cc-0606-4c7d-a76d-d57eca50bf95",
+    "name": "Item(s) with \"CPU Coolers\" tag display",
+    "commands": [{
+      "id": "40ba37b8-7484-4416-841b-ee52c5114c03",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/listings.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7b87f09-eeb8-46a5-bc80-24fd68a87b7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listings",
+      "targets": [
+        ["linkText=Listings", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Listings')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'listings.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad3c2643-dd38-4485-867e-2a04fc0f9ff1",
+      "comment": "",
+      "command": "click",
+      "target": "id=coolerBox",
+      "targets": [
+        ["id=coolerBox", "id"],
+        ["name=cooler", "name"],
+        ["css=#coolerBox", "css:finder"],
+        ["xpath=//input[@id='coolerBox']", "xpath:attributes"],
+        ["xpath=//div[7]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8c3ef78-f009-4a62-92e7-8af0ccf86662",
+      "comment": "",
+      "command": "click",
+      "target": "name=tagSearch-submit",
+      "targets": [
+        ["name=tagSearch-submit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='tagSearch-submit']", "xpath:attributes"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55561661-9d3e-4d64-bcf0-1e7b0763fcde",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card",
+      "targets": [
+        ["css=.card", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "460ac2f8-8a60-47ca-9642-f1d6f0d51b90",
+    "name": "Item(s) with \"Power Supplys\" tag display",
+    "commands": [{
+      "id": "c503006a-6725-475a-a2f0-977671536549",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/listings.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d8e8852-a72c-4cbf-b5f8-667689db671d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listings",
+      "targets": [
+        ["linkText=Listings", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Listings')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'listings.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "248976cf-1703-4649-b975-d1a95819f121",
+      "comment": "",
+      "command": "click",
+      "target": "id=psuBox",
+      "targets": [
+        ["id=psuBox", "id"],
+        ["name=psu", "name"],
+        ["css=#psuBox", "css:finder"],
+        ["xpath=//input[@id='psuBox']", "xpath:attributes"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "891f099a-419b-4594-bd91-aa3713e6d395",
+      "comment": "",
+      "command": "click",
+      "target": "name=tagSearch-submit",
+      "targets": [
+        ["name=tagSearch-submit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='tagSearch-submit']", "xpath:attributes"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47523fc9-347f-402d-99a5-02a0c1bc5072",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card:nth-child(1)",
+      "targets": [
+        ["css=.card:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f9aeaa9-b233-4a48-bd47-a78a691ce047",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card:nth-child(2)",
+      "targets": [
+        ["css=.card:nth-child(2)", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e1262a8d-817f-4fb5-a853-e2faa7ebd6e9",
+    "name": "Item(s) with \"Accessories\" tag display",
+    "commands": [{
+      "id": "3b0f315f-9497-4295-b5f4-1e8f5780a040",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/listings.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84a403e3-265e-4be2-b828-58d033d7c6f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Listings",
+      "targets": [
+        ["linkText=Listings", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Listings')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'listings.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Listings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb8498cd-94c3-422f-a3a0-1d442d04daea",
+      "comment": "",
+      "command": "click",
+      "target": "id=accBox",
+      "targets": [
+        ["id=accBox", "id"],
+        ["name=accessory", "name"],
+        ["css=#accBox", "css:finder"],
+        ["xpath=//input[@id='accBox']", "xpath:attributes"],
+        ["xpath=//div[9]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cef6061f-36f4-412a-a077-33b34d728169",
+      "comment": "",
+      "command": "click",
+      "target": "name=tagSearch-submit",
+      "targets": [
+        ["name=tagSearch-submit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//button[@name='tagSearch-submit']", "xpath:attributes"],
+        ["xpath=//div[10]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "275a3d45-b756-423d-a69e-14b821c31550",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card:nth-child(1)",
+      "targets": [
+        ["css=.card:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "416c6dad-94a8-42bf-9044-387e14e18387",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card:nth-child(2)",
+      "targets": [
+        ["css=.card:nth-child(2)", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14cdbb9e-8e83-4fe5-a3bc-99158753d22e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.card:nth-child(3)",
+      "targets": [
+        ["css=.card:nth-child(3)", "css:finder"],
+        ["xpath=//div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9141fc96-a68a-457b-a2e9-8e4b8ae6bc6c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8fbbf0aa-8904-4327-ab27-e3d5aaf68be8"]
+  }],
+  "urls": ["http://100.26.251.58/listings.php"],
+  "plugins": []
+}
