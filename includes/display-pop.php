@@ -74,10 +74,7 @@ if($_SESSION['pop'] == NULL){
             <div class="card-body">
                 <h5 class="card-title">'.$row['Title'].'</h5>
                 <h5 class="card-title">$'.$row['Price'].'</h5>
-                <p class="card-text">'.$row['Description'].'</p>
-                <div>
-                    
-                </div>
+                <p class="card-text">'.$row['Description'].'</p
             </div>
         </div>
         ';
