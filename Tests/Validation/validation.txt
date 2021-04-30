@@ -1,0 +1,56 @@
+User Stories --> Does it fulfill this function? --> files that are responsible for them
+	all -helper files are in the includes folder
+
+
+"As a user I want to have a page dedicated to making an account"
+	Completed -- When users connect to the webpage they are given the option to 
+	create an account which takes in basic data such as name email etc. and creates
+	a profile/account. signup.php signup-helper.php
+
+"As a user I would like to land at a homepage"
+	Completed -- when connecting to the site, the homepage is the landing site for
+	the entire website. index.php
+
+"As a user I want to have a login page for my account"
+	Completed -- users who have already created an account can access their account
+	by logging in through a login page which takes in the user's username and password and
+	in turn grants access to profile functionality. login.php login-helper.php
+
+"As a seller I want to be able to create listings"
+	Completed -- users who are logged in have the ability to create a listing with
+	information about the product, its condition and the price they are seeking
+	post.php post-helper.php
+
+"As a seller I would like to be albe to add descriptions to my listings"
+	Completed -- Covered in the create listings, there is a section to add a bit
+	more description of the product. post.php post-helper.php
+
+"As a user I want a profile page with easy to edit options"
+	Partial Completion -- All user information is able to be edited except for the username and password.
+	Unable to edit usernames due to database reliances. No two factor authentication for password
+	changing yet. profile-helper.php
+
+"As an admin/author I would like to edit and delete listings"
+	Partial Completion -- Edits are availible, deleting has not yet been implimented. item-helper.php
+
+"As as user I want to filter my search results based on tags"
+	Completed -- Tags can be added to listings, and those tags can be searched on using the
+	margin search bar. search-helper.php
+
+"As a user I would like a customer support page"
+	Completed -- A customer support page was created, it contains some FAQs and a way to
+	contact the developers. support.php
+
+"As a user I want to be able to favorite items to buy at a later date"
+	Completed -- Listings are shown with a heart button, that signifies which ones are favorited.
+	The favorited items can all be viewed in the favorites tab. favorites.php favorites-helper.php
+	display-pop.php
+
+"As a user I would like to be able to exchange contact info with sellers" (In order to complete a sale)
+	Completed -- Listings have a "contact seller" button that sends a message to the seller
+	containing the user's information. messages.php item-helper.php
+
+"As a user I would like to have an aesthetically pleasing item page"
+	Completed -- the user story was made just to remind us to somewhat style the item page, which
+	was done. item.css
+		
