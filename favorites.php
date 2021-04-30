@@ -11,6 +11,8 @@ require 'includes/header.php';
             <div class="row">
                 <?php
                     
+                    session_start();
+                
                     echo'<h5 class="results center-me">Favorites</h5>';
 
                     $uname = $_SESSION['uname'];
@@ -39,7 +41,6 @@ require 'includes/header.php';
                                                 <h5 class="card-title">'.$row['Title'].'</h5>
                                                 <h5 class="card-title">$'.$row['Price'].'</h5>
                                                 <p class="card-text">'.$row['Description'].'</p>
-                                                <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
                                             
                                                 <input type="hidden" name="lid" value="'.$row['lid'].'">
                                                 <button name="fav-delete" type="submit"><img src="images/heart.png" width="24" height="24"></button>
