@@ -116,6 +116,7 @@
                     $_SESSION['pop'] = "Default";
                     require "includes/display-pop.php"
                     ?>
+                    
                     </div>
                 </div>
             </div>
