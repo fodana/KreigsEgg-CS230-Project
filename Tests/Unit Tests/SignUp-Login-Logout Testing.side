@@ -1,0 +1,1093 @@
+{
+  "id": "4bbd0a24-333b-4955-bb5e-ac2d9fae9320",
+  "version": "2.0",
+  "name": "Sign-Up/Login/Logout Testing",
+  "url": "http://100.26.251.58",
+  "tests": [{
+    "id": "4c278629-d855-4e1c-a1a8-aebb2452f5f7",
+    "name": "login header + logout",
+    "commands": [{
+      "id": "4c706132-7436-4022-ae27-ff591860da94",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b70d9c28-959a-43d7-a7d2-c330c7c8fa1e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6e34b8d-da27-4103-b86b-b078df55036b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login.php')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f6cbd93-ce26-49c9-848d-64139a6ec29f",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname-email",
+      "targets": [
+        ["name=uname-email", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname-email']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "signup"
+    }, {
+      "id": "96084dc3-eda1-4b1e-918c-818883df2a97",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "bc3bd044-ab4a-4de7-9ba9-40c3005a797a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0e2a37f3-c1c2-41e1-869b-366d7764494d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.nav-item:nth-child(7) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'includes/logout.php')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6618ccf-ace9-4ffa-8883-2661fbfd09d0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2c3cec2a-e6e9-4895-b624-9e9a55d6036b",
+    "name": "login homepage + logout",
+    "commands": [{
+      "id": "3eefb732-8b99-4865-9e90-180330f8a7ac",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0ace905-a67b-44f4-a8fa-ab1b5e4b64cc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5a6de7c-3b0d-49e9-a95a-937b45d43251",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=login",
+      "targets": [
+        ["linkText=login", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'login')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'login.php')])[2]", "xpath:href"],
+        ["xpath=//p[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94b8a8dd-473e-450d-b965-474007e77f38",
+      "comment": "",
+      "command": "click",
+      "target": "name=uname-email",
+      "targets": [
+        ["name=uname-email", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname-email']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0d11e07-5a7b-4cc9-8092-df6e3caf2565",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname-email",
+      "targets": [
+        ["name=uname-email", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname-email']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "signup"
+    }, {
+      "id": "9f6cfa60-fbd8-4d85-901e-165cdc1eff51",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "2216bcd9-a309-40e4-875f-9d619ffc538f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "5182058d-a81d-40e6-ad08-1de05f53b3b5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.nav-item:nth-child(7) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'includes/logout.php')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58f678e1-d7ca-458d-9ff1-bec22858142b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "25439b5b-d372-4680-96dc-f045e972492e",
+    "name": "login userDNE",
+    "commands": [{
+      "id": "92933856-153e-4e6a-a085-56f90d026346",
+      "comment": "wrong user/pass = userDNE",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01f4d44b-794e-4e16-8e7d-53ce78d53763",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "861c39d2-1fbf-43e6-b023-a30a80141b71",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login.php')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19ea83a0-018b-4ed1-a737-f0ad3503134d",
+      "comment": "",
+      "command": "click",
+      "target": "name=uname-email",
+      "targets": [
+        ["name=uname-email", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname-email']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "525e346d-f3d8-4051-b144-56586db43508",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname-email",
+      "targets": [
+        ["name=uname-email", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname-email']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "f37917fd-94c5-4def-954f-751575c0d9e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "1cec0a7b-00ac-4144-b98c-cf3320b835b0",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "af80a5c5-e64c-40b7-8eca-997271071b3a",
+    "name": "signup homepage + login + logout",
+    "commands": [{
+      "id": "d7231ee1-28f8-4017-b4d0-877a2a2c2176",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f5b6be6-abd8-49f2-80dd-d21c0e7d2ab5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1052x807",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d030f7a-8985-4cdd-8835-fb467977adaa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=create an account",
+      "targets": [
+        ["linkText=create an account", "linkText"],
+        ["css=p > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'create an account')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'signup.php')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'create an account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e938b5f0-3e2e-4d0a-bb15-56a1ea4c361e",
+      "comment": "",
+      "command": "type",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "30415561-dbb0-4fc1-8611-77589fa6cd41",
+      "comment": "",
+      "command": "type",
+      "target": "name=lname",
+      "targets": [
+        ["name=lname", "name"],
+        ["css=.col:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='lname']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "cd8e0caa-7b5c-42af-aba1-c29e287c05e6",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "signup"
+    }, {
+      "id": "aff9b122-71fe-427f-9fc8-e68529c6e44b",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "signup@email.com"
+    }, {
+      "id": "b6d6ad55-2c2b-4c66-b489-d484c1903b4e",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPhoneNumber",
+      "targets": [
+        ["id=inputPhoneNumber", "id"],
+        ["name=phonenum", "name"],
+        ["css=#inputPhoneNumber", "css:finder"],
+        ["xpath=//input[@id='inputPhoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "65a39cdd-e3b0-4a39-afb7-00816920f59b",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "3090b7e8-ff03-493e-9ed1-941200f4a630",
+      "comment": "",
+      "command": "type",
+      "target": "name=con-pwd",
+      "targets": [
+        ["name=con-pwd", "name"],
+        ["xpath=(//input[@id='inputPassword'])[2]", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "63805d52-f6c3-450b-8bff-1ecac0486846",
+      "comment": "",
+      "command": "click",
+      "target": "name=signup-submit",
+      "targets": [
+        ["name=signup-submit", "name"],
+        ["css=.btn-out", "css:finder"],
+        ["xpath=//button[@name='signup-submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be4246a8-47aa-4caf-8e5a-75fee910daee",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname-email",
+      "targets": [
+        ["name=uname-email", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname-email']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "signup"
+    }, {
+      "id": "b9091d62-bde8-430a-9316-960bd2105d52",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "f91db45c-1488-44c7-8af5-5e13e4cffa97",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7968b00b-2865-41ce-a2df-ab13d9d04fee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.nav-item:nth-child(7) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'includes/logout.php')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bf5d921f-32b0-481c-b52c-c3cd818b941e",
+    "name": "signup login page + login + logout",
+    "commands": [{
+      "id": "a38a75db-ce15-4b2a-ad24-186e2bf676ad",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56e55816-cdcc-4c7d-aa2e-6aa72987312d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1053x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19588fc9-703c-408f-801d-8bccac1a0095",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'login.php')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1651f0d2-bf97-4c1e-8a4b-f26c36c95893",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hint-text",
+      "targets": [
+        ["css=.hint-text", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "066991bb-b439-42f9-9396-817ecdbe1dca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.m-hyperlink",
+      "targets": [
+        ["css=.m-hyperlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign\n                                    Up')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'signup.php')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89751d5c-d7ed-4a0a-a2e1-eb7cdc4a18c5",
+      "comment": "",
+      "command": "click",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78388db2-5bc3-48bf-a8f5-b89aa924cc47",
+      "comment": "",
+      "command": "type",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "d879b0ee-a676-4eed-925a-4bc408b83ffb",
+      "comment": "",
+      "command": "type",
+      "target": "name=lname",
+      "targets": [
+        ["name=lname", "name"],
+        ["css=.col:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='lname']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "b495e3e7-1329-41cd-a165-06e9decbbabb",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "signup"
+    }, {
+      "id": "7dc9f0a2-5045-46dd-806d-dadbf5a10f93",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "signup@email.com"
+    }, {
+      "id": "9767fd94-3cdb-4fe3-9b17-032d583621d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPhoneNumber",
+      "targets": [
+        ["id=inputPhoneNumber", "id"],
+        ["name=phonenum", "name"],
+        ["css=#inputPhoneNumber", "css:finder"],
+        ["xpath=//input[@id='inputPhoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "de741842-b3da-45ad-86a9-230d3045f305",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "cf661fe5-e77e-4b7b-a009-68d3a30f196d",
+      "comment": "",
+      "command": "type",
+      "target": "name=con-pwd",
+      "targets": [
+        ["name=con-pwd", "name"],
+        ["xpath=(//input[@id='inputPassword'])[2]", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "4f23abfc-5d11-4539-8eee-a631e1bc4de4",
+      "comment": "",
+      "command": "click",
+      "target": "name=signup-submit",
+      "targets": [
+        ["name=signup-submit", "name"],
+        ["css=.btn-out", "css:finder"],
+        ["xpath=//button[@name='signup-submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5344e3a7-0406-4cc4-a6d2-05f232a83875",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname-email",
+      "targets": [
+        ["name=uname-email", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname-email']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "signup"
+    }, {
+      "id": "9ce6213a-9f33-4bb3-bd8e-144a8b6302d9",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "a1e0d511-b9ea-4702-b108-4c69c8fbff1e",
+      "comment": "",
+      "command": "click",
+      "target": "name=login-submit",
+      "targets": [
+        ["name=login-submit", "name"],
+        ["css=.btn-out", "css:finder"],
+        ["xpath=//button[@name='login-submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7a12a0e-b072-48fd-98f4-bebe4f15beab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.nav-item:nth-child(7) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'includes/logout.php')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "110a3107-4219-4d58-9162-aef0216a188c",
+    "name": "signup UsernameTaken",
+    "commands": [{
+      "id": "8e17e4c5-395f-47a0-86b7-07ade6cc52bd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3eb75405-6479-4a2f-80f8-a04abd7755ca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1056x810",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "583ba351-2898-4f92-9dcd-b2b69ddd846b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active .d-block",
+      "targets": [
+        ["css=.active .d-block", "css:finder"],
+        ["xpath=//img[@alt='First slide']", "xpath:img"],
+        ["xpath=//div[@id='carouselExampleSlidesOnly']/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51370a96-7cd1-450e-b3ce-47aca0b1252a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.m-hyperlink",
+      "targets": [
+        ["css=.m-hyperlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign\n                                    Up')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'signup.php')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f77d9c4f-2928-4b01-b9e0-7f26820dc89f",
+      "comment": "",
+      "command": "type",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "0d811a1a-12db-4313-9793-01d66de319ae",
+      "comment": "",
+      "command": "type",
+      "target": "name=lname",
+      "targets": [
+        ["name=lname", "name"],
+        ["css=.col:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='lname']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "3ae6fca8-71bc-4b6b-96b5-1b8b97bed2ce",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "signup"
+    }, {
+      "id": "07866944-b228-471d-9f68-fda26bd89116",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "signup@email.com"
+    }, {
+      "id": "70abbba2-4472-42b6-9504-92e5364a62eb",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPhoneNumber",
+      "targets": [
+        ["id=inputPhoneNumber", "id"],
+        ["name=phonenum", "name"],
+        ["css=#inputPhoneNumber", "css:finder"],
+        ["xpath=//input[@id='inputPhoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "28ef98c5-2414-4903-94f5-ed9ecbea52ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "a380e078-b492-46e0-8064-3ba7f5093a4f",
+      "comment": "",
+      "command": "type",
+      "target": "name=con-pwd",
+      "targets": [
+        ["name=con-pwd", "name"],
+        ["xpath=(//input[@id='inputPassword'])[2]", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "46f975ec-eaa5-479c-9a8b-54a146af73f6",
+      "comment": "",
+      "command": "click",
+      "target": "name=signup-submit",
+      "targets": [
+        ["name=signup-submit", "name"],
+        ["css=.btn-out", "css:finder"],
+        ["xpath=//button[@name='signup-submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e34658e6-580f-4688-a466-519774e7b4df",
+    "name": "login signup page + logout",
+    "commands": [{
+      "id": "5a7b7bf9-3bd2-4a34-a830-3bdf8bf37391",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2677e5bb-4a2e-4277-9616-878653d55164",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x806",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec0c8687-4362-4986-98f6-d19a0992f85f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=create an account",
+      "targets": [
+        ["linkText=create an account", "linkText"],
+        ["css=p > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'create an account')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'signup.php')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'create an account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "805ec484-1106-42c8-90c1-827c848bb899",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.m-hyperlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'login.php')])[2]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78e767f6-6b28-4f60-b426-86ca98035a86",
+      "comment": "",
+      "command": "click",
+      "target": "name=uname-email",
+      "targets": [
+        ["name=uname-email", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname-email']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae2126f9-1b72-42dd-b7ec-0d2b28eea30c",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname-email",
+      "targets": [
+        ["name=uname-email", "name"],
+        ["css=.form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='uname-email']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "signup"
+    }, {
+      "id": "d5db0987-3838-4a09-998a-7bc08e4ef92b",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "819286c3-8705-42cf-ab27-473122e834c7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c7e481d1-d0f6-4b82-b082-9e9f89ea862d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.nav-item:nth-child(7) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'includes/logout.php')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afd84c21-526a-4f0b-9890-52d27a4796ed",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c5fc552d-47e4-4da4-b0ab-a537e44fcc6e",
+    "name": "signup mismatchedPasswords",
+    "commands": [{
+      "id": "97bda7c3-8081-4fb4-85a1-ecc2ca5c9920",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cda45b14-0e43-45f1-abcf-78371a670ad4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1052x805",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7dd0a4a4-e224-48f9-b83f-14e79e3d3202",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=create an account",
+      "targets": [
+        ["linkText=create an account", "linkText"],
+        ["css=p > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'create an account')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'signup.php')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'create an account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3a24f4e-3f0e-4228-b49a-c11efd6c7bab",
+      "comment": "",
+      "command": "click",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "102574da-a09e-4831-8be6-550096547535",
+      "comment": "",
+      "command": "type",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=.col:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "ff0ef3e1-a0a9-43c1-b31b-eb8cd6bbe2f7",
+      "comment": "",
+      "command": "type",
+      "target": "name=lname",
+      "targets": [
+        ["name=lname", "name"],
+        ["css=.col:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='lname']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "3160ca4b-4266-4626-b1d9-2463387c2eb9",
+      "comment": "",
+      "command": "type",
+      "target": "name=uname",
+      "targets": [
+        ["name=uname", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='uname']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "signup"
+    }, {
+      "id": "93616010-0bab-441b-8e0e-d23405061e4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "signup@email.com"
+    }, {
+      "id": "7bd38aaa-2691-4769-a248-0c6215e981cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPhoneNumber",
+      "targets": [
+        ["id=inputPhoneNumber", "id"],
+        ["name=phonenum", "name"],
+        ["css=#inputPhoneNumber", "css:finder"],
+        ["xpath=//input[@id='inputPhoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "087a44ce-6c1c-4c77-ac3c-9bc134670440",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=pwd", "name"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "124"
+    }, {
+      "id": "b4b00687-b1a2-4607-84fa-da1fc64200f1",
+      "comment": "",
+      "command": "type",
+      "target": "name=con-pwd",
+      "targets": [
+        ["name=con-pwd", "name"],
+        ["xpath=(//input[@id='inputPassword'])[2]", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "9208b83d-0a8f-46ff-b043-d8910fd3c61a",
+      "comment": "",
+      "command": "click",
+      "target": "name=signup-submit",
+      "targets": [
+        ["name=signup-submit", "name"],
+        ["css=.btn-out", "css:finder"],
+        ["xpath=//button[@name='signup-submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "40ba1a63-1734-4ec7-aff0-7beb4bbe61db",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://100.26.251.58/"],
+  "plugins": []
+}

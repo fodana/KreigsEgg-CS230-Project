@@ -10,11 +10,10 @@ require 'includes/header.php';
         <div class="inner-bg-cover">
             <div class="row">
                 <?php
-                    
                     echo'<h5 class="results center-me">Favorites</h5>';
 
                     $uname = $_SESSION['uname'];
-                    $sql = "SELECT * FROM favorites WHERE uname=$uname";
+                    $sql = "SELECT * FROM favorites WHERE uname='$uname'";
                     $query = mysqli_query($conn, $sql);
                     
 
@@ -39,7 +38,6 @@ require 'includes/header.php';
                                                 <h5 class="card-title">'.$row['Title'].'</h5>
                                                 <h5 class="card-title">$'.$row['Price'].'</h5>
                                                 <p class="card-text">'.$row['Description'].'</p>
-                                                <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
                                             
                                                 <input type="hidden" name="lid" value="'.$row['lid'].'">
                                                 <button name="fav-delete" type="submit"><img src="images/heart.png" width="24" height="24"></button>

@@ -76,10 +76,7 @@ if($_SESSION['pop'] == NULL){
             <div class="card-body">
                 <h5 class="card-title">'.$row['Title'].'</h5>
                 <h5 class="card-title">$'.$row['Price'].'</h5>
-                <p class="card-text">'.$row['Description'].'</p>
-                <div>
-                    <a href="#" class="btn btn-lg def-btn btn-lg position-relative">Request Seller Info</a>
-                </div>
+                <p class="card-text">'.$row['Description'].'</p
             </div>
         </div>
         ';

@@ -1,0 +1,295 @@
+{
+  "id": "12afc517-f12b-40f2-92cc-b27072434ca9",
+  "version": "2.0",
+  "name": "profileTest",
+  "url": "http://100.26.251.58/profile.php",
+  "tests": [{
+    "id": "4aa22285-a6a9-4e2d-b01d-f3783a17e3aa",
+    "name": "change email",
+    "commands": [{
+      "id": "dc26fb30-dcaf-4e37-9ba6-cae1c998d6cf",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/profile.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2e0e790-f6dd-4bfe-8757-e19e262cddd7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1532x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d13735d-51f6-4c7c-a714-aa9b0da054a8",
+      "comment": "",
+      "command": "click",
+      "target": "name=show-btn",
+      "targets": [
+        ["name=show-btn", "name"],
+        ["css=form:nth-child(3) > .show-btn", "css:finder"],
+        ["xpath=//input[@name='show-btn']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f78517e-0714-4fe5-9223-7ce00bf50763",
+      "comment": "",
+      "command": "click",
+      "target": "id=email-update",
+      "targets": [
+        ["id=email-update", "id"],
+        ["name=email-update", "name"],
+        ["css=#email-update", "css:finder"],
+        ["xpath=//input[@id='email-update']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "202fcb11-879b-4fcb-bc81-6f90c4b50c92",
+      "comment": "",
+      "command": "click",
+      "target": "id=email-update",
+      "targets": [
+        ["id=email-update", "id"],
+        ["name=email-update", "name"],
+        ["css=#email-update", "css:finder"],
+        ["xpath=//input[@id='email-update']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ff60da2-a7b5-4345-a161-0cae0ca98e68",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-update",
+      "targets": [
+        ["id=email-update", "id"],
+        ["name=email-update", "name"],
+        ["css=#email-update", "css:finder"],
+        ["xpath=//input[@id='email-update']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "math@math.com"
+    }, {
+      "id": "f74d65fa-8911-4644-88d5-229ef92d6a4c",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//input[@id='submit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2148e4cf-6ca1-4dc1-a79e-d9d7649f4758",
+    "name": "change name",
+    "commands": [{
+      "id": "b3d079c4-8fc1-4156-9f21-164448d9a4ba",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/profile.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ad1b55d-c2ec-4e3c-8887-7606be0ae081",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1532x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a238e7ba-a2c5-4cdf-a2f4-0ac317e57f70",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fname .show-btn",
+      "targets": [
+        ["css=.fname .show-btn", "css:finder"],
+        ["xpath=(//input[@name='show-btn'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10c9dac1-3ef7-442c-9158-f0c50906f02d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inner",
+      "targets": [
+        ["css=.inner", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83cd794f-af3f-474c-acde-38c9f0832da2",
+      "comment": "",
+      "command": "type",
+      "target": "id=fname-update",
+      "targets": [
+        ["id=fname-update", "id"],
+        ["name=fname-update", "name"],
+        ["css=#fname-update", "css:finder"],
+        ["xpath=//input[@id='fname-update']", "xpath:attributes"],
+        ["xpath=//div[3]/form/input[2]", "xpath:position"]
+      ],
+      "value": "Michael"
+    }, {
+      "id": "138d47a4-5b04-45d0-a057-21d09392c433",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitfname",
+      "targets": [
+        ["id=submitfname", "id"],
+        ["name=submitfname", "name"],
+        ["css=#submitfname", "css:finder"],
+        ["xpath=//input[@id='submitfname']", "xpath:attributes"],
+        ["xpath=//div[3]/form/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "084cf15b-6930-4481-9178-df438926d1bc",
+    "name": "change last name",
+    "commands": [{
+      "id": "1c29cba7-e31e-40e6-a244-bc0674a32b3d",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/profile.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f51da54-b717-4e79-93a8-5389d58c954e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1532x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f0d77b7-7fa9-4ccd-9623-0876cc1e82e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lname .show-btn",
+      "targets": [
+        ["css=.lname .show-btn", "css:finder"],
+        ["xpath=(//input[@name='show-btn'])[3]", "xpath:attributes"],
+        ["xpath=//div[4]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1ab47ba-2e08-4d41-b3c5-feb711989041",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inner",
+      "targets": [
+        ["css=.inner", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "498efa7e-c9b5-408d-a6af-de8a56c86d41",
+      "comment": "",
+      "command": "type",
+      "target": "id=lname-update",
+      "targets": [
+        ["id=lname-update", "id"],
+        ["name=lname-update", "name"],
+        ["css=#lname-update", "css:finder"],
+        ["xpath=//input[@id='lname-update']", "xpath:attributes"],
+        ["xpath=//div[4]/form/input[2]", "xpath:position"]
+      ],
+      "value": "Tarantino"
+    }, {
+      "id": "dd7d2a00-e51f-4dc6-a415-7162b7f5dc9e",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitlname",
+      "targets": [
+        ["id=submitlname", "id"],
+        ["name=submitlname", "name"],
+        ["css=#submitlname", "css:finder"],
+        ["xpath=//input[@id='submitlname']", "xpath:attributes"],
+        ["xpath=//div[4]/form/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "75f22253-54b8-47fd-8552-e47863582f5b",
+    "name": "change pnum",
+    "commands": [{
+      "id": "b2616e7e-e8b1-49c4-bf34-d04bd61a48a6",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/profile.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bed25965-e911-4ae6-b32d-f4187cb25a17",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1532x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c299dadb-52f8-4973-af35-08e78fab9a55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.phnum .show-btn",
+      "targets": [
+        ["css=.phnum .show-btn", "css:finder"],
+        ["xpath=(//input[@name='show-btn'])[4]", "xpath:attributes"],
+        ["xpath=//div[5]/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbeed14c-a25b-4ef4-9b80-e462df420b20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.phnum > form",
+      "targets": [
+        ["css=.phnum > form", "css:finder"],
+        ["xpath=(//form[@action='includes/profile-helper.php'])[5]", "xpath:attributes"],
+        ["xpath=//div[5]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e290910-9029-475e-bbce-0f310ce2c077",
+      "comment": "",
+      "command": "type",
+      "target": "id=phnum-update",
+      "targets": [
+        ["id=phnum-update", "id"],
+        ["name=phnum-update", "name"],
+        ["css=#phnum-update", "css:finder"],
+        ["xpath=//input[@id='phnum-update']", "xpath:attributes"],
+        ["xpath=//div[5]/form/input[2]", "xpath:position"]
+      ],
+      "value": "1231234123"
+    }, {
+      "id": "6811fa80-2e78-4223-b77a-e7b4144d8e07",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitphnum",
+      "targets": [
+        ["id=submitphnum", "id"],
+        ["name=submitphnum", "name"],
+        ["css=#submitphnum", "css:finder"],
+        ["xpath=//input[@id='submitphnum']", "xpath:attributes"],
+        ["xpath=//div[5]/form/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b63cf548-53df-4fc2-94ad-a5f3db4b60b0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4aa22285-a6a9-4e2d-b01d-f3783a17e3aa"]
+  }],
+  "urls": ["http://100.26.251.58/profile.php"],
+  "plugins": []
+}
