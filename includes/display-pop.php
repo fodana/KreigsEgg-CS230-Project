@@ -31,7 +31,7 @@ if($_SESSION['pop'] == NULL){
                         <h5 class="card-title">'.$row['Title'].'</h5>
                         <h5 class="card-title">$'.$row['Price'].'</h5>
                         <p class="card-text">'.$row['Description'].'</p>
-                        <a href="#" class="btn btn-sm def-btn btn-sm position-relative">Request Seller Info</a>
+                       
                         
                         <a href="review.php?lid='.$row['lid'].'" class="btn btn-sm def-btn btn-sm position-relative">Seller Reivews</a>
                         
