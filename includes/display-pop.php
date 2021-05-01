@@ -33,7 +33,7 @@ if($_SESSION['pop'] == NULL){
                         <p class="card-text">'.$row['Description'].'</p>
                         <a href="#" class="btn btn-sm def-btn btn-sm position-relative">Request Seller Info</a>
                         
-                        <a href="review.php?lid='.$row['lid'].'" class="btn btn-sm def-btn btn-sm position-relative">Review the Seller</a>
+                        <a href="review.php?lid='.$row['lid'].'" class="btn btn-sm def-btn btn-sm position-relative">Seller Reivews</a>
                         
                         <input type="hidden" name="lid" value="'.$row['lid'].'">
                         <button name="fav-submit" type="submit"><img src="images/heart.png" width="24" height="24"></button>
