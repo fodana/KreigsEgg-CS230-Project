@@ -1,0 +1,834 @@
+{
+  "id": "4c11994b-89c8-41f5-933b-0cd9014cfb4b",
+  "version": "2.0",
+  "name": "Post Creating Test",
+  "url": "http://100.26.251.58/post.php",
+  "tests": [{
+    "id": "d4067ca5-82cd-4e54-9fb6-85ff5e5f7432",
+    "name": "PostTest1",
+    "commands": [{
+      "id": "f1b64024-ac6a-47d7-9d65-67963ef7fc14",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/post.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aef203ca-2008-4847-b0ab-5bc22e70f03f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "998x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8c323fa-a395-4989-9869-a72a68b359d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=product name",
+      "targets": [
+        ["id=product name", "id"],
+        ["name=title", "name"],
+        ["css=#product\\ name", "css:finder"],
+        ["xpath=//input[@id='product name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22f971d8-9946-442e-8da8-c27043637248",
+      "comment": "",
+      "command": "type",
+      "target": "id=product name",
+      "targets": [
+        ["id=product name", "id"],
+        ["name=title", "name"],
+        ["css=#product\\ name", "css:finder"],
+        ["xpath=//input[@id='product name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Gaming Keyboard"
+    }, {
+      "id": "2f6843cd-1a1c-4fea-8a0d-f888b57aec8b",
+      "comment": "",
+      "command": "type",
+      "target": "id=price in",
+      "targets": [
+        ["id=price in", "id"],
+        ["name=price", "name"],
+        ["css=#price\\ in", "css:finder"],
+        ["xpath=//input[@id='price in']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "50"
+    }, {
+      "id": "0767bc27-9645-417e-bd59-540d2841c10c",
+      "comment": "",
+      "command": "type",
+      "target": "id=desc",
+      "targets": [
+        ["id=desc", "id"],
+        ["name=desc", "name"],
+        ["css=#desc", "css:finder"],
+        ["xpath=//textarea[@id='desc']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Lenova "
+    }, {
+      "id": "fe97fad9-5b3b-4017-8ceb-7a6637b88469",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90313ae6-c480-48a1-a933-6cc26fd3153b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2f8d6ce-c2d4-4458-8e2d-5b45f5bf8c9e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9024b86-62e2-41b8-a1e3-0dc9f9330c50",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8e166c5f-4813-45c5-b6e9-5708b2b918c6",
+    "name": "PostTest2",
+    "commands": [{
+      "id": "42395b6d-bdac-4595-b104-e5ff01b08e63",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/post.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3ef3b58-8849-47b8-af13-0cf583260020",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "998x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "491fe388-c508-4dde-9bf1-61d06ae3d4df",
+      "comment": "",
+      "command": "click",
+      "target": "id=product name",
+      "targets": [
+        ["id=product name", "id"],
+        ["name=title", "name"],
+        ["css=#product\\ name", "css:finder"],
+        ["xpath=//input[@id='product name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "120d8817-acdd-4d00-9f21-9df73e4be30e",
+      "comment": "",
+      "command": "type",
+      "target": "id=product name",
+      "targets": [
+        ["id=product name", "id"],
+        ["name=title", "name"],
+        ["css=#product\\ name", "css:finder"],
+        ["xpath=//input[@id='product name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Keyboard"
+    }, {
+      "id": "9a0174fc-cdaf-4d39-8659-dfa1debddbb3",
+      "comment": "",
+      "command": "click",
+      "target": "id=price in",
+      "targets": [
+        ["id=price in", "id"],
+        ["name=price", "name"],
+        ["css=#price\\ in", "css:finder"],
+        ["xpath=//input[@id='price in']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09a77541-5d90-46a3-8cc0-fa1527db97f0",
+      "comment": "",
+      "command": "type",
+      "target": "id=price in",
+      "targets": [
+        ["id=price in", "id"],
+        ["name=price", "name"],
+        ["css=#price\\ in", "css:finder"],
+        ["xpath=//input[@id='price in']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "50"
+    }, {
+      "id": "9d5183bc-9c67-4e68-b071-e80ad5f36566",
+      "comment": "",
+      "command": "click",
+      "target": "id=desc",
+      "targets": [
+        ["id=desc", "id"],
+        ["name=desc", "name"],
+        ["css=#desc", "css:finder"],
+        ["xpath=//textarea[@id='desc']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ac9858d-5ee7-4143-b0b2-0a9be7a315a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=desc",
+      "targets": [
+        ["id=desc", "id"],
+        ["name=desc", "name"],
+        ["css=#desc", "css:finder"],
+        ["xpath=//textarea[@id='desc']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "New Lenova Legion Keyboard"
+    }, {
+      "id": "241d4aed-3060-4161-8c55-860486f9e733",
+      "comment": "",
+      "command": "click",
+      "target": "id=imgUpload",
+      "targets": [
+        ["id=imgUpload", "id"],
+        ["name=post-photo", "name"],
+        ["css=#imgUpload", "css:finder"],
+        ["xpath=//input[@id='imgUpload']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0d441fb-d971-40af-940f-5b5b2ce4c5d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=imgUpload",
+      "targets": [
+        ["id=imgUpload", "id"],
+        ["name=post-photo", "name"],
+        ["css=#imgUpload", "css:finder"],
+        ["xpath=//input[@id='imgUpload']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\keyboard.webp"
+    }, {
+      "id": "160b0818-39b1-4224-91d1-8d5a0cc5b498",
+      "comment": "",
+      "command": "click",
+      "target": "id=newBox",
+      "targets": [
+        ["id=newBox", "id"],
+        ["name=new", "name"],
+        ["css=#newBox", "css:finder"],
+        ["xpath=//input[@id='newBox']", "xpath:attributes"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e45af961-ad6a-4d53-9c59-9f91524ae85c",
+      "comment": "",
+      "command": "click",
+      "target": "id=accBox",
+      "targets": [
+        ["id=accBox", "id"],
+        ["name=accessory", "name"],
+        ["css=#accBox", "css:finder"],
+        ["xpath=//input[@id='accBox']", "xpath:attributes"],
+        ["xpath=//div[3]/div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e0b3fbd-59c7-4292-9f95-7246dd623f6d",
+      "comment": "",
+      "command": "click",
+      "target": "name=post-submit",
+      "targets": [
+        ["name=post-submit", "name"],
+        ["css=.btn-out", "css:finder"],
+        ["xpath=//button[@name='post-submit']", "xpath:attributes"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dd4c0254-8365-4ad7-baaf-5d0ec581b7d5",
+    "name": "PostTest3",
+    "commands": [{
+      "id": "79686cad-3f93-4db0-b51f-a8769e81eba3",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/post.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab901cee-e424-4c15-9e72-0fdc5c66cec0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "998x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95c3c570-469e-42ce-8fe9-4ed7d475c62c",
+      "comment": "",
+      "command": "click",
+      "target": "id=product name",
+      "targets": [
+        ["id=product name", "id"],
+        ["name=title", "name"],
+        ["css=#product\\ name", "css:finder"],
+        ["xpath=//input[@id='product name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eaebfd1-91b6-4431-aae7-27cc60598b8c",
+      "comment": "",
+      "command": "type",
+      "target": "id=product name",
+      "targets": [
+        ["id=product name", "id"],
+        ["name=title", "name"],
+        ["css=#product\\ name", "css:finder"],
+        ["xpath=//input[@id='product name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Monitor"
+    }, {
+      "id": "53501a21-b493-40bd-83e2-9d51fa0b3dd3",
+      "comment": "",
+      "command": "type",
+      "target": "id=price in",
+      "targets": [
+        ["id=price in", "id"],
+        ["name=price", "name"],
+        ["css=#price\\ in", "css:finder"],
+        ["xpath=//input[@id='price in']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "6e455d68-1bfa-45de-bba6-d74af87dc5a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=imgUpload",
+      "targets": [
+        ["id=imgUpload", "id"],
+        ["name=post-photo", "name"],
+        ["css=#imgUpload", "css:finder"],
+        ["xpath=//input[@id='imgUpload']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20f811c5-afd0-407d-829a-f14345c2b928",
+      "comment": "",
+      "command": "type",
+      "target": "id=imgUpload",
+      "targets": [
+        ["id=imgUpload", "id"],
+        ["name=post-photo", "name"],
+        ["css=#imgUpload", "css:finder"],
+        ["xpath=//input[@id='imgUpload']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\41FMf7aGP3L._AC_.jpg"
+    }, {
+      "id": "ade7f55a-cccf-4230-8e77-5a473eb992e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=usedBox",
+      "targets": [
+        ["id=usedBox", "id"],
+        ["name=used", "name"],
+        ["css=#usedBox", "css:finder"],
+        ["xpath=//input[@id='usedBox']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e4ed9fb-0160-456f-a435-14d6345d5822",
+      "comment": "",
+      "command": "click",
+      "target": "name=post-submit",
+      "targets": [
+        ["name=post-submit", "name"],
+        ["css=.btn-out", "css:finder"],
+        ["xpath=//button[@name='post-submit']", "xpath:attributes"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c542efa7-ecaf-412d-ba40-a37814274441",
+    "name": "PostTest4",
+    "commands": [{
+      "id": "219117ca-25d9-4f43-8430-20181bb23bbd",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/post.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93061f12-e177-4d10-b85f-0e8fb9f257e4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "998x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7802178-0f29-4ae0-80f9-114fea1ea58d",
+      "comment": "",
+      "command": "click",
+      "target": "id=price in",
+      "targets": [
+        ["id=price in", "id"],
+        ["name=price", "name"],
+        ["css=#price\\ in", "css:finder"],
+        ["xpath=//input[@id='price in']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfa54e12-1a3f-4957-afec-f2cc4fc1ea44",
+      "comment": "",
+      "command": "type",
+      "target": "id=price in",
+      "targets": [
+        ["id=price in", "id"],
+        ["name=price", "name"],
+        ["css=#price\\ in", "css:finder"],
+        ["xpath=//input[@id='price in']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "200"
+    }, {
+      "id": "23f4ed1e-cb90-4a6a-bcc8-88114240991c",
+      "comment": "",
+      "command": "click",
+      "target": "id=desc",
+      "targets": [
+        ["id=desc", "id"],
+        ["name=desc", "name"],
+        ["css=#desc", "css:finder"],
+        ["xpath=//textarea[@id='desc']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb51df65-faf7-45bc-86c3-64df133911db",
+      "comment": "",
+      "command": "click",
+      "target": "id=desc",
+      "targets": [
+        ["id=desc", "id"],
+        ["name=desc", "name"],
+        ["css=#desc", "css:finder"],
+        ["xpath=//textarea[@id='desc']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8887db5-5d0b-4934-b0ac-084b193cadc7",
+      "comment": "",
+      "command": "type",
+      "target": "id=desc",
+      "targets": [
+        ["id=desc", "id"],
+        ["name=desc", "name"],
+        ["css=#desc", "css:finder"],
+        ["xpath=//textarea[@id='desc']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Dell Inspiron Business Desktop\\nUsed\\nDecent condition"
+    }, {
+      "id": "8efc0169-0f48-4098-a010-cce0c276b422",
+      "comment": "",
+      "command": "click",
+      "target": "id=imgUpload",
+      "targets": [
+        ["id=imgUpload", "id"],
+        ["name=post-photo", "name"],
+        ["css=#imgUpload", "css:finder"],
+        ["xpath=//input[@id='imgUpload']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ff0b970-f0cf-40d3-ac17-1cbc9eee951e",
+      "comment": "",
+      "command": "click",
+      "target": "id=imgUpload",
+      "targets": [
+        ["id=imgUpload", "id"],
+        ["name=post-photo", "name"],
+        ["css=#imgUpload", "css:finder"],
+        ["xpath=//input[@id='imgUpload']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8f3c78d-41e1-4ba0-b7ab-ff9f035f4ac3",
+      "comment": "",
+      "command": "type",
+      "target": "id=imgUpload",
+      "targets": [
+        ["id=imgUpload", "id"],
+        ["name=post-photo", "name"],
+        ["css=#imgUpload", "css:finder"],
+        ["xpath=//input[@id='imgUpload']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\dell computer.png"
+    }, {
+      "id": "6408e924-c3fc-4ac9-9fc7-7ce379ec9e1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=usedBox",
+      "targets": [
+        ["id=usedBox", "id"],
+        ["name=used", "name"],
+        ["css=#usedBox", "css:finder"],
+        ["xpath=//input[@id='usedBox']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04693e8b-c92f-4a95-8a76-850ddf0b3241",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > .row",
+      "targets": [
+        ["css=form > .row", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a433bec-701c-4921-8294-3e64dc7ab44c",
+      "comment": "",
+      "command": "type",
+      "target": "id=price in",
+      "targets": [
+        ["id=price in", "id"],
+        ["name=price", "name"],
+        ["css=#price\\ in", "css:finder"],
+        ["xpath=//input[@id='price in']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "600"
+    }, {
+      "id": "1c22f424-0b60-41c5-b716-f6b9f9109528",
+      "comment": "",
+      "command": "click",
+      "target": "name=post-submit",
+      "targets": [
+        ["name=post-submit", "name"],
+        ["css=.btn-out", "css:finder"],
+        ["xpath=//button[@name='post-submit']", "xpath:attributes"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d4fd1729-1119-48e2-ac3e-229a87ddd0bf",
+    "name": "PostTest5",
+    "commands": [{
+      "id": "2f853f36-75c1-4bb6-9f47-e00bad628957",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/post.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4cea411-8850-43a6-b96c-02911d3eb53f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "998x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3061ba57-17f2-4bba-8cb3-3399ece465e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=product name",
+      "targets": [
+        ["id=product name", "id"],
+        ["name=title", "name"],
+        ["css=#product\\ name", "css:finder"],
+        ["xpath=//input[@id='product name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3998015-dc27-4a46-8dcf-c67ad33b3217",
+      "comment": "",
+      "command": "type",
+      "target": "id=product name",
+      "targets": [
+        ["id=product name", "id"],
+        ["name=title", "name"],
+        ["css=#product\\ name", "css:finder"],
+        ["xpath=//input[@id='product name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Computer Mouse"
+    }, {
+      "id": "a1faff4c-d0bd-48fd-9970-d3ac39a10a5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=desc",
+      "targets": [
+        ["id=desc", "id"],
+        ["name=desc", "name"],
+        ["css=#desc", "css:finder"],
+        ["xpath=//textarea[@id='desc']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4639764f-e7c6-49c7-b258-2c4138056e48",
+      "comment": "",
+      "command": "type",
+      "target": "id=desc",
+      "targets": [
+        ["id=desc", "id"],
+        ["name=desc", "name"],
+        ["css=#desc", "css:finder"],
+        ["xpath=//textarea[@id='desc']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Dell Wireless Mouse WM126 Black"
+    }, {
+      "id": "45f0261e-8d25-42e8-b6e2-2654eb261db2",
+      "comment": "",
+      "command": "click",
+      "target": "id=accBox",
+      "targets": [
+        ["id=accBox", "id"],
+        ["name=accessory", "name"],
+        ["css=#accBox", "css:finder"],
+        ["xpath=//input[@id='accBox']", "xpath:attributes"],
+        ["xpath=//div[3]/div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "664c08f4-0652-4eef-af01-13217e829b5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=usedBox",
+      "targets": [
+        ["id=usedBox", "id"],
+        ["name=used", "name"],
+        ["css=#usedBox", "css:finder"],
+        ["xpath=//input[@id='usedBox']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57e08878-4704-4a0b-af47-f24f0fbd14e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=imgUpload",
+      "targets": [
+        ["id=imgUpload", "id"],
+        ["name=post-photo", "name"],
+        ["css=#imgUpload", "css:finder"],
+        ["xpath=//input[@id='imgUpload']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "717979e0-3f41-4634-a68b-238798de9319",
+      "comment": "",
+      "command": "type",
+      "target": "id=imgUpload",
+      "targets": [
+        ["id=imgUpload", "id"],
+        ["name=post-photo", "name"],
+        ["css=#imgUpload", "css:finder"],
+        ["xpath=//input[@id='imgUpload']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\mouse.png"
+    }, {
+      "id": "b9750c64-afa9-41cd-9f97-4683fbf721d1",
+      "comment": "",
+      "command": "click",
+      "target": "name=post-submit",
+      "targets": [
+        ["name=post-submit", "name"],
+        ["css=.btn-out", "css:finder"],
+        ["xpath=//button[@name='post-submit']", "xpath:attributes"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "49cdae41-ea5d-412b-a9b3-03e061d4e500",
+    "name": "PostTest6",
+    "commands": [{
+      "id": "4f9a1395-9c5a-4e1b-8766-f7315e1a18c9",
+      "comment": "",
+      "command": "open",
+      "target": "http://100.26.251.58/post.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4d1a91a-9cb9-49e0-b0d5-2db88d8e4de3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "998x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68ea039f-15bd-4464-aae2-fe8d7aa4cf46",
+      "comment": "",
+      "command": "click",
+      "target": "id=product name",
+      "targets": [
+        ["id=product name", "id"],
+        ["name=title", "name"],
+        ["css=#product\\ name", "css:finder"],
+        ["xpath=//input[@id='product name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1a9f777-4f91-41a8-93d7-c5d46997c669",
+      "comment": "",
+      "command": "type",
+      "target": "id=product name",
+      "targets": [
+        ["id=product name", "id"],
+        ["name=title", "name"],
+        ["css=#product\\ name", "css:finder"],
+        ["xpath=//input[@id='product name']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "headphones"
+    }, {
+      "id": "a3014ca7-9c61-4b40-853c-7922bc34ea76",
+      "comment": "",
+      "command": "type",
+      "target": "id=price in",
+      "targets": [
+        ["id=price in", "id"],
+        ["name=price", "name"],
+        ["css=#price\\ in", "css:finder"],
+        ["xpath=//input[@id='price in']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "150"
+    }, {
+      "id": "d116a4bd-2984-490c-9c9e-94828b6e4399",
+      "comment": "",
+      "command": "click",
+      "target": "id=desc",
+      "targets": [
+        ["id=desc", "id"],
+        ["name=desc", "name"],
+        ["css=#desc", "css:finder"],
+        ["xpath=//textarea[@id='desc']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d32ec51d-c13a-438d-a086-8a5c6afa03b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=desc",
+      "targets": [
+        ["id=desc", "id"],
+        ["name=desc", "name"],
+        ["css=#desc", "css:finder"],
+        ["xpath=//textarea[@id='desc']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Razer Kraken Kitty RGB USB Gaming Headset"
+    }, {
+      "id": "18d78138-715d-4166-b7eb-d1f3e322d217",
+      "comment": "",
+      "command": "click",
+      "target": "id=imgUpload",
+      "targets": [
+        ["id=imgUpload", "id"],
+        ["name=post-photo", "name"],
+        ["css=#imgUpload", "css:finder"],
+        ["xpath=//input[@id='imgUpload']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b7e79a4-c276-456a-987c-eae9bc7920c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=imgUpload",
+      "targets": [
+        ["id=imgUpload", "id"],
+        ["name=post-photo", "name"],
+        ["css=#imgUpload", "css:finder"],
+        ["xpath=//input[@id='imgUpload']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\headphones.png"
+    }, {
+      "id": "007ce0c9-83c8-4bba-8b1b-723d7300a898",
+      "comment": "",
+      "command": "click",
+      "target": "name=post-submit",
+      "targets": [
+        ["name=post-submit", "name"],
+        ["css=.btn-out", "css:finder"],
+        ["xpath=//button[@name='post-submit']", "xpath:attributes"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Listing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f966448a-47cc-4742-a0ce-cded32804403",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "040f517a-7874-4f4a-abd3-340396fc49d5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6833eb16-ae6f-407c-9204-e9f625a1c961",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5d9863df-eade-444f-9598-b27e2ea37d96",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://100.26.251.58/post.php"],
+  "plugins": []
+}
