@@ -38,7 +38,5 @@ Shayna Brewer - https://github.com/shaynabrewer
 
 Quinelle Richardson - https://github.com/Quinelle
 
-Live IP:
-http://3.237.242.129/
 
 
